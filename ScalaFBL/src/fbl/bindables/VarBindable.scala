@@ -1,11 +1,15 @@
 package fbl.bindables
 
-import fbl.Bindable
+import fbl._
 import fbl.events.ContextualChangeInfo
+
+
+
+
 /**
   * Created by GregRos on 06/02/2016.
   */
-class VarBindable[T](initial: T) extends Bindable[T] {
+private[fbl] class VarBindable[T](initial: T) extends Bindable[T]  {
 
     def this() = {
         this(defaultValue[T])

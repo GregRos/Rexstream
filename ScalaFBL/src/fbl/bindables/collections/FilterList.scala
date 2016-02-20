@@ -6,7 +6,7 @@ import scala.collection._
 /**
   * Created by GregRos on 13/02/2016.
   */
-class FilterList[T](inner : BindingPointsList[T], selector : BindableMap[T, Boolean]) extends BindingPointsList[T] {
+private[fbl] class FilterList[T](inner : BindingPointsList[T], selector : BindableMap[T, Boolean]) extends BindingPointsList[T] {
     val filterResults = new MapList[T, Boolean](inner, selector)
     val indexList = mutable.ArrayBuffer[Int]()
     private val onInnerResultsChanged: (ItemChanged[Bindable[Boolean]]) => Unit = (change) => {

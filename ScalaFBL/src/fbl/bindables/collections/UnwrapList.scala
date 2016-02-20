@@ -9,7 +9,7 @@ import scala.collection.mutable._
   * Exposes the elements of a `BindablesList[T]`, translating operations on the elements to operations on the bindables.
   *
   */
-class UnwrapList[T](inner : BindingPointsList[T]) extends Buffer[T] with ItemChangedNotifier[T] {
+private[fbl] class UnwrapList[T](inner : BindingPointsList[T]) extends Buffer[T] with ItemChangedNotifier[T] {
     private val onBindableListChanged = (param : ItemChanged[Bindable[T]]) => {
         val myMessage : ItemChanged[T] =
             param match {

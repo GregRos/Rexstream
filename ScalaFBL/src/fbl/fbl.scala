@@ -13,26 +13,36 @@ package object fbl {
 
     implicit class ListBindableExt[T](inner : ListBindable[T]) {
 
-
-
-        def mapBind[TOut](convert : BindableMap[T, TOut]) = {
-            new MapBindable[T, TOut](inner, convert) : ListBindable[TOut]
+        def map[TOut](convert : BindableMap[T, TOut]) = {
+            new MapListBindable[T, TOut](inner, convert) : ListBindable[TOut]
         }
 
-        def mapFunc[TOut](convertOut : T => TOut = null, convertIn : TOut => T = null) = {
-            mapBind((b : Bindable[T]) => b.convert(convertOut, convertIn))
+        def filter(f : BindableMap[T, Boolean]) = {
+            new FilterListBindable[T](inner, f) : ListBindable[T]
         }
 
-        def filterBind(f : BindableMap[T, Boolean]) = {
-            new FilterBindable[T](inner, f) : ListBindable[T]
+        def aggregate[TOut](f : Operator[T, TOut]) : Bindable[TOut] = {
+            new ListAggregateBindable[T, TOut](inner, f)
         }
 
-        def filterFunc(f : T => Boolean) = {
-            filterBind((b : Bindable[T]) => b.convert(f))
+        def sumBy[TNum](f : BindableMap[T, TNum])(implicit num : Numeric[TNum]) = {
+            inner.map(f).sum
         }
 
         def linkList = {
-            inner.mapBind(x => x.link)
+            inner.map(b => b.link)
+        }
+    }
+
+    implicit class NumericListBindableExt[T](inner : ListBindable[T])(implicit num : Numeric[T]) {
+        def sum = {
+            inner.aggregate(new Operator[T, T] {
+                override def zero = num.zero
+                override val isOrderInvariant = true
+                override def plus(cur : T, other : T) = num.plus(cur, other)
+                override def minus(cur : T, other : T) = num.minus(cur, other)
+                override def equal(cur : T, other : T) = cur == other
+            })
         }
     }
 
@@ -42,5 +52,5 @@ package object fbl {
 
     def Const[T](v : T) = new ConstBindable[T](v)
 
-    def ListVar[T] = new BufferBindable[T]()
+    def ListVar[T] = new SimpleListBindable[T]()
 }

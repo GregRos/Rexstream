@@ -7,7 +7,7 @@ import scala.collection._
 
 
 
-class MapBindable[TIn, TOut](inner : ListBindable[TIn], convert : BindableMap[TIn, TOut]) extends ListBindable[TOut] {
+private[fbl] class MapListBindable[TIn, TOut](inner : ListBindable[TIn], convert : BindableMap[TIn, TOut]) extends ListBindable[TOut] {
     val outer = new MapList[TIn, TOut](inner.bindingPoints, convert)
     val itemsList =  outer.unbind
     itemsList.change += ((change : ItemChanged[TOut]) => changed.raise(change))

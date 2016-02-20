@@ -30,5 +30,9 @@ trait Bindable[T] extends AutoCloseable {
         changed.close()
         _isDisposed = true
     }
+
+    override def toString = {
+        s"{<${value.toString}>}"
+    }
 }
 

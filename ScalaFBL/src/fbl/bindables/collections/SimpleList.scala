@@ -9,17 +9,16 @@ import scala.collection._
   * Created by GregRos on 06/02/2016.
   */
 
-class SimpleList[T](ctor : Unit => Bindable[T]) extends BindingPointsList[T] {
-    protected val inner = ObservableCollection.empty[Bindable[T]]
+private[fbl] class SimpleList[T](ctor : Unit => Bindable[T]) extends BindingPointsList[T] {
+    protected val inner = ObservableList.empty[Bindable[T]]
     inner.change ++= _change
-    private val mp = mutable.Map[Bindable[T], AutoCloseable]()
     private val onBindableChanged = (bindable : Bindable[T]) => (changeInfo : ContextualChangeInfo) => {
         val indexOf = inner.indexOf(bindable)
         _change.raise(ItemMutated(indexOf, bindable, changeInfo))
     }
 
     private def register(newBindable : Bindable[T]) = {
-        mp(newBindable) = (newBindable.changed += onBindableChanged(newBindable))
+        newBindable.changed += onBindableChanged(newBindable)
     }
 
     override def insert(n : Int, init : Bindable[T] => Unit): Bindable[T] = {
@@ -33,7 +32,6 @@ class SimpleList[T](ctor : Unit => Bindable[T]) extends BindingPointsList[T] {
     override def remove(n : Int) : Bindable[T] = {
         val oldItem = inner(n)
         inner.remove(n)
-        mp(oldItem).close()
         oldItem
     }
 

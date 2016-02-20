@@ -7,8 +7,8 @@ import fbl._
 /**
   * Created by GregRos on 12/02/2016.
   */
-class MapList[TIn, TOut](inner : BindingPointsList[TIn], convert : BindableMap[TIn, TOut]) extends BindingPointsList[TOut] {
-    private val outer = ObservableCollection.empty[Bindable[TOut]]
+private[fbl] class MapList[TIn, TOut](inner : BindingPointsList[TIn], convert : BindableMap[TIn, TOut]) extends BindingPointsList[TOut] {
+    private val outer = ObservableList.empty[Bindable[TOut]]
     private val expectInnerChange = new ExpectEntry()
 
     private val onOuterItemMutated = (sender : Bindable[TOut]) => (changeInfo : ContextualChangeInfo) => {

@@ -9,7 +9,7 @@ object Main {
 
     def main(arr: Array[String]): Unit = {
         val list = ListVar[Int]
-        val mapped = list.mapFunc(n => n.asInstanceOf[Long], (n : Long) => n.asInstanceOf[Int])
+        val mapped = list.map(_.convert(n => n.asInstanceOf[Long], (n : Long) => n.asInstanceOf[Int]))
         list.value += 0 += 1 += 2
         list.value(0) = -1
         list.value.remove(1)
@@ -17,12 +17,14 @@ object Main {
         mapped.value.remove(1)
         val dfg = 54
 
-        val filtered = mapped.filterFunc(x => x % 2 == 0)
+        val filtered = mapped.filter(_.convert(x => x % 2 == 0))
 
         println(list.value.toList)
         println(mapped.value.toList)
         println(filtered.value.toList)
 
+        println(filtered.sum)
+        println(mapped.sum)
         filtered.value += 5 += 10
         println(list.value.toList)
         println(mapped.value.toList)
@@ -35,6 +37,12 @@ object Main {
         println(list.value.toList)
         println(mapped.value.toList)
         println(filtered.value.toList)
+
+        list.value += 1 += 3
+
+        println(filtered.sum)
+        println(mapped.sum)
+
 
     }
 }

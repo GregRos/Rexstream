@@ -7,8 +7,7 @@ import scala.collection._
 /**
   * Created by GregRos on 13/02/2016.
   */
-class AutoClosingList[T](inner : ObservableCollection[T]) extends mutable.Buffer[T] with ItemChangedNotifier[T] {
-
+class AutoClosingList[T](inner : ObservableList[T]) extends mutable.Buffer[T] with ItemChangedNotifier[T] {
     inner.change += ((change: ItemChanged[T]) => {
         _change.raise(change)
     })

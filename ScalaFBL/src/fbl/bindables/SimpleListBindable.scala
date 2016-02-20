@@ -6,7 +6,7 @@ import scala.collection._
 /**
   * Created by GregRos on 19/02/2016.
   */
-class BufferBindable[T](inner : SimpleList[T]) extends ListBindable[T] {
+private[fbl] class SimpleListBindable[T](inner : SimpleList[T]) extends ListBindable[T] {
     def this() = this(new SimpleList[T](Unit => new VarBindable[T]()))
     protected val itemsList = inner.unbind
     itemsList.change += ((change) => changed.raise(change))

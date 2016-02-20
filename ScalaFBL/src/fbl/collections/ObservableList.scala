@@ -5,7 +5,7 @@ import fbl.events._
 import scala.collection.mutable
 
 
-class ObservableCollection[T](private val inner : mutable.Buffer[T])  extends mutable.Buffer[T] with Seq[T] with ItemChangedNotifier[T] {
+class ObservableList[T](private val inner : mutable.Buffer[T])  extends mutable.Buffer[T] with Seq[T] with ItemChangedNotifier[T] {
     override def apply(n: Int): T = inner(n)
 
     override def update(n: Int, newelem: T): Unit = {
@@ -54,6 +54,6 @@ class ObservableCollection[T](private val inner : mutable.Buffer[T])  extends mu
     override def iterator: Iterator[T] = inner.iterator
 }
 
-object ObservableCollection {
-    def empty[T] = new ObservableCollection[T](mutable.ArrayBuffer.empty)
+object ObservableList {
+    def empty[T] = new ObservableList[T](mutable.ArrayBuffer.empty)
 }

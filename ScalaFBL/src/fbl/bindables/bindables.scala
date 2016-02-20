@@ -6,6 +6,6 @@ package object bindables {
     }
 
     private[fbl] def defaultValue[T] = {
-        DefaultBox[T].default
+        DefaultBox[T]().default
     }
 }
