@@ -1,6 +1,6 @@
 package fbl.bindables.collections
 
-import fbl.{BindingPointsList, Bindable}
+import fbl.{ValueBindable, BindingPointsList, AnyBindable}
 import fbl.collections._
 import fbl.events._
 
@@ -10,7 +10,7 @@ import scala.collection.mutable._
   *
   */
 private[fbl] class UnwrapList[T](inner : BindingPointsList[T]) extends Buffer[T] with ItemChangedNotifier[T] {
-    private val onBindableListChanged = (param : ItemChanged[Bindable[T]]) => {
+    private val onBindableListChanged = (param : ItemChanged[ValueBindable[T]]) => {
         val myMessage : ItemChanged[T] =
             param match {
                 case ItemAdded(i, v) => ItemAdded(i, v.value)
@@ -47,7 +47,11 @@ private[fbl] class UnwrapList[T](inner : BindingPointsList[T]) extends Buffer[T]
 
     override def length: Int = inner.length
 
-    override def remove(n: Int): T = inner.remove(n).value
+    override def remove(n: Int): T = {
+        val oldValue = inner(n).value
+        inner.remove(n)
+        oldValue
+    }
 
     override def +=:(elem: T): UnwrapList.this.type = {
         insert(0, elem)

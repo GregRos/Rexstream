@@ -7,7 +7,7 @@ trait ContextualChangeInfo {
 
 }
 
-case class LastValueInfo[T](prevValue : T) extends ContextualChangeInfo {
+case class LastValueInfo[T](prevValue : T) extends SingleValueChangeInfo {
 
 }
 
@@ -15,9 +15,9 @@ case object EmptyChangeInfo extends ContextualChangeInfo {
 
 }
 
-/**
-  * Created by GregRos on 06/02/2016.
-  */
-case class NoChangeInfo() extends ContextualChangeInfo {
+trait SingleValueChangeInfo extends ContextualChangeInfo {
 
 }
+
+
+

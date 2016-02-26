@@ -4,17 +4,17 @@
 package fbl.bindables
 
 
-import fbl.Bindable
+import fbl._
 import fbl.events._
 
 class ConvertBindable[TIn, TOut](
-    inner: Bindable[TIn],
+    inner: ValueBindable[TIn],
     convertIn: Option[TOut => TIn],
-    convertOut: Option[TIn => TOut]) extends Bindable[TOut] {
+    convertOut: Option[TIn => TOut]) extends ValueBindable[TOut] {
     private var _lastValue: Option[TOut] = None
     private val token = inner.changed.subscribe(args => {
         _lastValue = None
-        this.changed.raise(new NoChangeInfo())
+        this.changed.raise(null)
     })
 
     override def canRead = convertOut.isDefined && inner.canRead

@@ -1,31 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/fbl/bindables/SimpleBindable.scala" description="class SimpleBindable {&#10;&#10;}&#10;" line="8" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6f9b6a07-7a73-4def-8b7b-54ffd4e498df" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fbl/Errors.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fbl/Operator.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fbl/bindables/ListAggregateBindable.scala" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fbl/ValueSource.scala" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fbl/bindables/CannotReadException.scala" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fbl/bindables/CannotWriteException.scala" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fbl/AnyBindable.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fbl/CollectionBindable.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fbl/ValueBindable.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fbl/bindables/BaseCollectionBindable.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fbl/bindables/ListFilterBindable.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fbl/bindables/ListMapBindable.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fbl/bindables/SimpleBindable.scala" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fbl/Bindable.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fbl/ListBindable.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fbl/bindables/FilterListBindable.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fbl/bindables/MapListBindable.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fbl/bindables/SimpleListBindable.scala" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main/Main.scala" afterPath="$PROJECT_DIR$/src/Main/Main.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fbl/Bindable.scala" afterPath="$PROJECT_DIR$/src/fbl/Bindable.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fbl/BindingPointsList.scala" afterPath="$PROJECT_DIR$/src/fbl/BindingPointsList.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fbl/Errors.scala" afterPath="$PROJECT_DIR$/src/fbl/Errors.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fbl/bindables/ComputedBindable.scala" afterPath="$PROJECT_DIR$/src/fbl/bindables/ComputedBindable.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fbl/bindables/ConstBindable.scala" afterPath="$PROJECT_DIR$/src/fbl/bindables/ConstBindable.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fbl/bindables/ConvertBindable.scala" afterPath="$PROJECT_DIR$/src/fbl/bindables/ConvertBindable.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fbl/bindables/LinkBindable.scala" afterPath="$PROJECT_DIR$/src/fbl/bindables/LinkBindable.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fbl/bindables/ListAggregateBindable.scala" afterPath="$PROJECT_DIR$/src/fbl/bindables/ListAggregateBindable.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fbl/bindables/VarBindable.scala" afterPath="$PROJECT_DIR$/src/fbl/bindables/VarBindable.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fbl/bindables/bindables.scala" afterPath="$PROJECT_DIR$/src/fbl/bindables/bindables.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fbl/bindables/collections/FilterList.scala" afterPath="$PROJECT_DIR$/src/fbl/bindables/collections/FilterList.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fbl/bindables/collections/MapList.scala" afterPath="$PROJECT_DIR$/src/fbl/bindables/collections/MapList.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fbl/bindables/collections/SimpleList.scala" afterPath="$PROJECT_DIR$/src/fbl/bindables/collections/SimpleList.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fbl/bindables/collections/UnwrapList.scala" afterPath="$PROJECT_DIR$/src/fbl/bindables/collections/UnwrapList.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fbl/collections/AutoClosingList.scala" afterPath="$PROJECT_DIR$/src/fbl/collections/AutoClosingList.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fbl/collections/ObservableList.scala" afterPath="$PROJECT_DIR$/src/fbl/collections/ObservableList.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fbl/events/ContextualChangeInfo.scala" afterPath="$PROJECT_DIR$/src/fbl/events/ContextualChangeInfo.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fbl/fbl.scala" afterPath="$PROJECT_DIR$/src/fbl/fbl.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/fbl/bindables/BufferBindable.scala" afterPath="$PROJECT_DIR$/src/fbl/bindables/SimpleListBindable.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/fbl/bindables/FilterBindable.scala" afterPath="$PROJECT_DIR$/src/fbl/bindables/FilterListBindable.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/fbl/bindables/MapBindable.scala" afterPath="$PROJECT_DIR$/src/fbl/bindables/MapListBindable.scala" />
     </list>
     <ignored path="ScalaFBL.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,12 +56,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SimpleList.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fbl/bindables/collections/SimpleList.scala">
+      <file leaf-file-name="LinkBindable.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/fbl/bindables/LinkBindable.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.20645161">
+              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+              <folding>
+                <element signature="e#23#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AutoClosingList.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fbl/collections/AutoClosingList.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding />
+              <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+              <folding>
+                <element signature="e#25#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapList.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fbl/bindables/collections/MapList.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="63" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
+              <folding>
+                <element signature="e#35#57#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,17 +96,17 @@
         <entry file="file://$PROJECT_DIR$/src/fbl/bindables/collections/UnwrapList.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <caret line="12" column="80" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="80" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VarBindable.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fbl/bindables/VarBindable.scala">
+      <file leaf-file-name="ComputedBindable.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fbl/bindables/ComputedBindable.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
               <folding>
                 <element signature="e#23#35#0" expanded="true" />
               </folding>
@@ -83,8 +118,10 @@
         <entry file="file://$PROJECT_DIR$/src/fbl/bindables/ConstBindable.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding />
+              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+              <folding>
+                <element signature="e#23#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,62 +130,40 @@
         <entry file="file://$PROJECT_DIR$/src/fbl/bindables/ConvertBindable.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ComputedBindable.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/fbl/bindables/ComputedBindable.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.624025">
-              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimpleListBindable.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fbl/bindables/SimpleListBindable.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding>
-                <element signature="e#22#34#0" expanded="true" />
+                <element signature="e#71#83#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MapListBindable.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fbl/bindables/MapListBindable.scala">
+      <file leaf-file-name="ExpectEntry.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fbl/bindables/ExpectEntry.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LinkBindable.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fbl/bindables/LinkBindable.scala">
+      <file leaf-file-name="bindables.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fbl/bindables/bindables.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FilterListBindable.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fbl/bindables/FilterListBindable.scala">
+      <file leaf-file-name="SimpleList.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fbl/bindables/collections/SimpleList.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-              <folding>
-                <element signature="e#321#883#0" expanded="false" />
-              </folding>
+              <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -176,38 +191,51 @@
       <list>
         <option value="$PROJECT_DIR$/src/fbl/events/AbsEvent.scala" />
         <option value="$PROJECT_DIR$/src/fbl/BindablesList.scala" />
-        <option value="$PROJECT_DIR$/src/fbl/BindingPointsList.scala" />
         <option value="$PROJECT_DIR$/src/fbl/bindables/collections/SimpleBindablesList.scala" />
-        <option value="$PROJECT_DIR$/src/fbl/ListBindable.scala" />
         <option value="$PROJECT_DIR$/src/fbl/bindables/ListBindable.scala" />
         <option value="$PROJECT_DIR$/src/fbl/bindables/BufferBindable.scala" />
-        <option value="$PROJECT_DIR$/src/fbl/bindables/FilterBindable.scala" />
-        <option value="$PROJECT_DIR$/src/fbl/bindables/MapBindable.scala" />
         <option value="$PROJECT_DIR$/src/fbl/util/util.scala" />
-        <option value="$PROJECT_DIR$/src/fbl/bindables/collections/MapList.scala" />
-        <option value="$PROJECT_DIR$/src/fbl/bindables/collections/SimpleList.scala" />
-        <option value="$PROJECT_DIR$/src/fbl/bindables/collections/UnwrapList.scala" />
         <option value="$PROJECT_DIR$/src/fbl/bindables/CannotReadException.scala" />
         <option value="$PROJECT_DIR$/src/fbl/bindables/Errors.scala" />
-        <option value="$PROJECT_DIR$/src/fbl/Errors.scala" />
-        <option value="$PROJECT_DIR$/src/fbl/bindables/collections/FilterList.scala" />
-        <option value="$PROJECT_DIR$/src/fbl/bindables/FilterListBindable.scala" />
-        <option value="$PROJECT_DIR$/src/fbl/bindables/LinkBindable.scala" />
-        <option value="$PROJECT_DIR$/src/fbl/bindables/MapListBindable.scala" />
-        <option value="$PROJECT_DIR$/src/fbl/bindables/SimpleListBindable.scala" />
         <option value="$PROJECT_DIR$/src/fbl/ValueSource.scala" />
         <option value="$PROJECT_DIR$/src/fbl/bindables/ValueSource.scala" />
-        <option value="$PROJECT_DIR$/src/fbl/bindables/VarBindable.scala" />
         <option value="$PROJECT_DIR$/src/fbl/bindables/bindables.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/events/ItemChanged.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/collections/ObservableList.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/bindables/SomeListBindable.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/bindables/MapListBindable.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/bindables/SimpleListBindable.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/Errors.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/collections/AutoClosingList.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/bindables/SingleValueBindable.scala" />
         <option value="$PROJECT_DIR$/src/fbl/bindables/ComputedBindable.scala" />
         <option value="$PROJECT_DIR$/src/fbl/bindables/ConstBindable.scala" />
-        <option value="$PROJECT_DIR$/src/fbl/collections/ObservableList.scala" />
-        <option value="$PROJECT_DIR$/src/fbl/collections/AutoClosingList.scala" />
-        <option value="$PROJECT_DIR$/src/fbl/events/ItemChanged.scala" />
-        <option value="$PROJECT_DIR$/src/fbl/fbl.scala" />
-        <option value="$PROJECT_DIR$/src/fbl/Bindable.scala" />
-        <option value="$PROJECT_DIR$/src/Main/Main.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/events/ContextualChangeInfo.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/ListBindable.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/bindables/FilterListBindable.scala" />
         <option value="$PROJECT_DIR$/src/fbl/bindables/ListAggregateBindable.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/bindables/VarBindable.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/bindables/BaseListBindable.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/bindables/ConvertBindable.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/bindables/LinkBindable.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/bindables/collections/SimpleList.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/bindables/collections/FilterList.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/AnyBindable.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/CollectionBindable.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/BindingPointsList.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/bindables/collections/MapList.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/bindables/BaseCollectionBindable.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/bindables/collections/UnwrapList.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/bindables/SimpleBindable.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/fbl.scala" />
+        <option value="$PROJECT_DIR$/src/Main/Main.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/bindables/MapBindable.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/bindables/ListMapBindable.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/bindables/FilterBindable.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/bindables/ListFilterBindable.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/SingleValueBindable.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/Bindable.scala" />
+        <option value="$PROJECT_DIR$/src/fbl/ValueBindable.scala" />
       </list>
     </option>
   </component>
@@ -242,8 +270,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -317,6 +343,154 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaFBL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaFBL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="implementation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="package.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaFBL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaFBL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ItemChanged.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaFBL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaFBL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaFBL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaFBL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ContextualChangeInfo.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaFBL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaFBL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="collections" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ObservableList.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaFBL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaFBL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="collections" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -343,8 +517,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaFBL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaFBL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fbl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bindables" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="collections" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -707,20 +909,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-8" width="1873" height="1096" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3075314" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15899582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2960251" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15585774" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17283268" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20706792" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -730,7 +931,8 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958587" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5376569" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -755,6 +957,78 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/LinkBindable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding>
+            <element signature="e#23#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbl/fbl.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/collections/FilterList.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#269#3885#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/collections/UnwrapList.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/LinkBindable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding>
+            <element signature="e#23#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbl/fbl.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/collections/FilterList.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#269#3885#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/collections/UnwrapList.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/fbl/bindables/collections/SimpleList.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -763,23 +1037,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/collections/FilterList.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="e#35#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fbl/bindables/collections/MapList.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="e#35#57#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -811,9 +1073,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="66" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
-          <folding>
-            <element signature="e#35#57#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -821,31 +1081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fbl/BindingPointsList.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-          <folding>
-            <element signature="e#13#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fbl/ListBindable.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fbl/events/ContextualChangeInfo.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -863,18 +1098,167 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbl/collections/ObservableList.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding>
+            <element signature="e#25#44#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/fbl/Errors.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/ExpectEntry.scala">
+    <entry file="file://$PROJECT_DIR$/src/fbl/AnyBindable.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <folding>
+            <element signature="e#13#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbl/events/ItemChanged.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbl/events/ContextualChangeInfo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbl/CollectionBindable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#12#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbl/BindingPointsList.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="118" selection-start-line="12" selection-start-column="118" selection-end-line="12" selection-end-column="118" />
+          <folding>
+            <element signature="e#13#47#0" expanded="true" />
+            <element signature="e#466#1330#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/collections/FilterList.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding>
+            <element signature="e#269#3885#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbl/fbl.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="45" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Main.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/ListAggregateBindable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding>
+            <element signature="e#22#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/VarBindable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="67" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="67" />
+          <folding>
+            <element signature="e#23#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/SimpleBindable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+          <folding>
+            <element signature="e#23#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/ListMapBindable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding>
+            <element signature="e#23#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/ListFilterBindable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/BaseCollectionBindable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbl/ValueBindable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/collections/UnwrapList.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="80" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="80" />
           <folding />
         </state>
       </provider>
@@ -887,84 +1271,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fbl/collections/ObservableList.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding>
-            <element signature="e#25#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fbl/collections/AutoClosingList.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="107" selection-start-line="9" selection-start-column="107" selection-end-line="9" selection-end-column="107" />
+          <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
           <folding>
             <element signature="e#25#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fbl/events/ItemChanged.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fbl/fbl.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fbl/Bindable.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Main.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/ListAggregateBindable.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding>
-            <element signature="e#22#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/collections/FilterList.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-          <folding>
-            <element signature="e#35#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/collections/MapList.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="e#35#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -972,59 +1284,25 @@
     <entry file="file://$PROJECT_DIR$/src/fbl/bindables/collections/SimpleList.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/collections/UnwrapList.scala">
+    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/collections/MapList.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/SimpleListBindable.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <caret line="15" column="63" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
           <folding>
-            <element signature="e#22#34#0" expanded="true" />
+            <element signature="e#35#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/MapListBindable.scala">
+    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/ComputedBindable.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/LinkBindable.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/FilterListBindable.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="e#321#883#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/VarBindable.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
           <folding>
             <element signature="e#23#35#0" expanded="true" />
           </folding>
@@ -1034,24 +1312,38 @@
     <entry file="file://$PROJECT_DIR$/src/fbl/bindables/ConstBindable.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="e#23#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fbl/bindables/ConvertBindable.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <element signature="e#71#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/ExpectEntry.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/ComputedBindable.scala">
+    <entry file="file://$PROJECT_DIR$/src/fbl/bindables/LinkBindable.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.624025">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding />
+        <state vertical-scroll-proportion="0.20645161">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding>
+            <element signature="e#23#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

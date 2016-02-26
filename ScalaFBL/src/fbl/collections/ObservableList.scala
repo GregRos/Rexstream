@@ -3,9 +3,13 @@ package fbl.collections
 import fbl.events._
 
 import scala.collection.mutable
+import scala.collection.mutable.ArrayBuffer
 
 
 class ObservableList[T](private val inner : mutable.Buffer[T])  extends mutable.Buffer[T] with Seq[T] with ItemChangedNotifier[T] {
+
+    def this() = this(new ArrayBuffer[T]())
+
     override def apply(n: Int): T = inner(n)
 
     override def update(n: Int, newelem: T): Unit = {

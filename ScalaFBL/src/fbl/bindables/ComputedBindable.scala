@@ -1,6 +1,6 @@
 package fbl.bindables
 
-import fbl.{Errors, Bindable}
+import fbl._
 import fbl.events.ContextualChangeInfo
 /**rgd
   *
@@ -8,12 +8,18 @@ import fbl.events.ContextualChangeInfo
   * ==blah==
   *
   */
-private[fbl] class ComputedBindable[T](generator : Unit => T) extends Bindable[T] {
+private[fbl] class ComputedBindable[T](generator : Unit => T) extends ValueBindable[T] {
     var _lastValue : Option[T] = None
     changed += (context => _lastValue = Some(generator(())))
-    override def setValueWithContext(x: T)(context: ContextualChangeInfo): Unit = throw Errors.Cannot_write
+    override def canWrite = false
+    override def canRead = true
+    override val parent = null
+    override def setValueWithContext(x: T)(context: ContextualChangeInfo): Unit ={
+        throw Errors.Cannot_write
+    }
 
     override def value: T = {
+        if (isDisposed) throw Errors.Object_closed(this)
         if (_lastValue.isEmpty) {
             _lastValue = Some(generator(()))
         }

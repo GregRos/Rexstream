@@ -9,19 +9,19 @@ import scala.collection._
   * Created by GregRos on 06/02/2016.
   */
 
-private[fbl] class SimpleList[T](ctor : Unit => Bindable[T]) extends BindingPointsList[T] {
-    protected val inner = ObservableList.empty[Bindable[T]]
+private[fbl] class SimpleList[T](ctor : Unit => ValueBindable[T]) extends BindingPointsList[T] {
+    protected val inner = new AutoClosingList[ValueBindable[T]]
     inner.change ++= _change
-    private val onBindableChanged = (bindable : Bindable[T]) => (changeInfo : ContextualChangeInfo) => {
-        val indexOf = inner.indexOf(bindable)
-        _change.raise(ItemMutated(indexOf, bindable, changeInfo))
+    private val onBindableChanged = (SingleValueBindable : ValueBindable[T]) => (changeInfo : ContextualChangeInfo) => {
+        val indexOf = inner.indexOf(SingleValueBindable)
+        _change.raise(ItemMutated(indexOf, SingleValueBindable, changeInfo))
     }
 
-    private def register(newBindable : Bindable[T]) = {
+    private def register(newBindable : ValueBindable[T]) = {
         newBindable.changed += onBindableChanged(newBindable)
     }
 
-    override def insert(n : Int, init : Bindable[T] => Unit): Bindable[T] = {
+    override def insert(n : Int, init : ValueBindable[T] => Unit): ValueBindable[T] = {
         val newBindable = ctor(())
         init(newBindable)
         inner.insert(n, newBindable)
@@ -29,7 +29,7 @@ private[fbl] class SimpleList[T](ctor : Unit => Bindable[T]) extends BindingPoin
         newBindable
     }
 
-    override def remove(n : Int) : Bindable[T] = {
+    override def remove(n : Int) : ValueBindable[T] = {
         val oldItem = inner(n)
         inner.remove(n)
         oldItem
@@ -45,5 +45,6 @@ private[fbl] class SimpleList[T](ctor : Unit => Bindable[T]) extends BindingPoin
         inner(n)
     }
 
-    override def iterator: Iterator[Bindable[T]] = inner.iterator
+    override def iterator: Iterator[ValueBindable[T]] = inner.iterator
+
 }

@@ -9,8 +9,8 @@ import scala.collection._
 private[fbl] class FilterList[T](inner : BindingPointsList[T], selector : BindableMap[T, Boolean]) extends BindingPointsList[T] {
     val filterResults = new MapList[T, Boolean](inner, selector)
     val indexList = mutable.ArrayBuffer[Int]()
-    private val onInnerResultsChanged: (ItemChanged[Bindable[Boolean]]) => Unit = (change) => {
-        val myMessage : Option[ItemChanged[Bindable[T]]] =
+    private val onInnerResultsChanged: (ItemChanged[ValueBindable[Boolean]]) => Unit = (change) => {
+        val myMessage : Option[ItemChanged[ValueBindable[T]]] =
             change match {
                 case ItemAdded(i, b) => {
                     insertFilter(i, b.value).map(i => ItemAdded(i, this(i)))
@@ -86,11 +86,11 @@ private[fbl] class FilterList[T](inner : BindingPointsList[T], selector : Bindab
         maybeNewIndex
     }
 
-    override def apply(n: Int): Bindable[T] = {
+    override def apply(n: Int): ValueBindable[T] = {
         inner(indexList(n))
     }
 
-    override def insert(n: Int, init : Bindable[T] => Unit): Bindable[T] = {
+    override def insert(n: Int, init : ValueBindable[T] => Unit): ValueBindable[T] = {
         val realIndex ={
             if (indexList.isEmpty && n == 0) {
                 0
@@ -107,11 +107,11 @@ private[fbl] class FilterList[T](inner : BindingPointsList[T], selector : Bindab
 
     override def length: Int = indexList.length
 
-    override def remove(n: Int): Bindable[T] = {
+    override def remove(n: Int): ValueBindable[T] = {
         inner.remove(indexList(n))
     }
 
-    override def iterator: Iterator[Bindable[T]] = {
+    override def iterator: Iterator[ValueBindable[T]] = {
         indexList.map(i => inner(i)).iterator
     }
 }

@@ -8,15 +8,15 @@ import fbl._
   * Created by GregRos on 12/02/2016.
   */
 private[fbl] class MapList[TIn, TOut](inner : BindingPointsList[TIn], convert : BindableMap[TIn, TOut]) extends BindingPointsList[TOut] {
-    private val outer = ObservableList.empty[Bindable[TOut]]
+    private val outer = new AutoClosingList[ValueBindable[TOut]]()
     private val expectInnerChange = new ExpectEntry()
 
-    private val onOuterItemMutated = (sender : Bindable[TOut]) => (changeInfo : ContextualChangeInfo) => {
+    private val onOuterItemMutated = (sender : ValueBindable[TOut]) => (changeInfo : ContextualChangeInfo) => {
         val indexOf = outer.indexOf(sender)
         _change.raise(ItemMutated(indexOf, sender, changeInfo))
     }
 
-    private val onInnerChanged = (changeInfo : ItemChanged[Bindable[TIn]]) => {
+    private val onInnerChanged = (changeInfo : ItemChanged[ValueBindable[TIn]]) => {
         if (expectInnerChange.canEnter) {
             changeInfo match {
                 case ItemAdded(i, v) => outer.insert(i, convert(v))
@@ -35,7 +35,7 @@ private[fbl] class MapList[TIn, TOut](inner : BindingPointsList[TIn], convert : 
     } : Unit
 
 
-    private val onOuterChanged = (changeInfo : ItemChanged[Bindable[TOut]]) => {
+    private val onOuterChanged = (changeInfo : ItemChanged[ValueBindable[TOut]]) => {
         changeInfo match {
             case ItemAdded(i, newItem) => newItem.changed += onOuterItemMutated(newItem)
             case Reset() => //do something...
@@ -49,9 +49,9 @@ private[fbl] class MapList[TIn, TOut](inner : BindingPointsList[TIn], convert : 
     change += onOuterChanged
 
     onInnerChanged(Reset())
-    override def apply(n: Int): Bindable[TOut] = outer(n)
+    override def apply(n: Int): ValueBindable[TOut] = outer(n)
 
-    override def insert(n: Int, init : Bindable[TOut] => Unit): Bindable[TOut] = {
+    override def insert(n: Int, init : ValueBindable[TOut] => Unit): ValueBindable[TOut] = {
         //suppress change because we handle ItemAdded here, instead of in the handler.
         expectInnerChange.noEntry(_ => {
             inner.insert(n, b => {
@@ -67,11 +67,11 @@ private[fbl] class MapList[TIn, TOut](inner : BindingPointsList[TIn], convert : 
 
     override def length: Int = inner.length
 
-    override def remove(n: Int): Bindable[TOut] ={
+    override def remove(n: Int): ValueBindable[TOut] ={
         val item = outer(n)
         inner.remove(n)
         item
     }
 
-    override def iterator: Iterator[Bindable[TOut]] = outer.iterator
+    override def iterator: Iterator[ValueBindable[TOut]] = outer.iterator
 }

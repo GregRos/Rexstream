@@ -7,7 +7,10 @@ import scala.collection._
 /**
   * Created by GregRos on 13/02/2016.
   */
-class AutoClosingList[T](inner : ObservableList[T]) extends mutable.Buffer[T] with ItemChangedNotifier[T] {
+private[fbl] class AutoClosingList[T] (inner : ObservableList[T]) extends mutable.Buffer[T] with ItemChangedNotifier[T] with AutoCloseable {
+
+    def this() = this(new ObservableList[T]())
+
     inner.change += ((change: ItemChanged[T]) => {
         _change.raise(change)
     })
@@ -56,4 +59,9 @@ class AutoClosingList[T](inner : ObservableList[T]) extends mutable.Buffer[T] wi
     }
 
     override def iterator: scala.Iterator[T] = inner.iterator
+
+    override def close(): Unit = {
+        _change.close()
+        clear()
+    }
 }
