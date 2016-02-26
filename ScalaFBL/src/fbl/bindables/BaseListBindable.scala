@@ -1,11 +1,11 @@
 package fbl.bindables
 
-import fbl.{AnyBindable, CollectionBindable, BindingPointsList}
+import fbl.{AnyBindable, ListBindable, BindingPointsList}
 
 /**
   * Created by GregRos on 26/02/2016.
   */
-abstract class BaseCollectionBindable[T](pointsList : BindingPointsList[T]) extends CollectionBindable[T] {
+abstract class BaseListBindable[T](pointsList : BindingPointsList[T]) extends ListBindable[T] {
     protected val itemsList = pointsList.unbind
 
     override val bindingPoints: BindingPointsList[T] = pointsList
@@ -18,12 +18,12 @@ abstract class BaseCollectionBindable[T](pointsList : BindingPointsList[T]) exte
 
     override def remove(n: Int): T = itemsList.remove(n)
 
-    override def +=:(elem: T): BaseCollectionBindable.this.type = {
+    override def +=:(elem: T): BaseListBindable.this.type = {
         itemsList.+=:(elem)
         this
     }
 
-    override def +=(elem: T): BaseCollectionBindable.this.type = {
+    override def +=(elem: T): BaseListBindable.this.type = {
         itemsList.+=(elem)
         this
     }

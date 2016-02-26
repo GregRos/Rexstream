@@ -18,5 +18,4 @@ private[fbl] object Errors {
 
     def Object_closed(obj : Any, message : String = "") =
         new ObjectClosedException(message)
-
 }

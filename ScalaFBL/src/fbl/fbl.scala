@@ -11,14 +11,14 @@ package object fbl {
         }
     }
 
-    implicit class ListBindableExt[T](inner : CollectionBindable[T]) {
+    implicit class ListBindableExt[T](inner : ListBindable[T]) {
 
         def map_>[TOut](convert : BindableMap[T, TOut]) = {
-            new ListMapBindable[T, TOut](inner, convert) : CollectionBindable[TOut]
+            new ListMapBindable[T, TOut](inner, convert) : ListBindable[TOut]
         }
 
         def filter_>(f : BindableMap[T, Boolean]) = {
-            new ListFilterBindable[T](inner, f) : CollectionBindable[T]
+            new ListFilterBindable[T](inner, f) : ListBindable[T]
         }
 
         def aggregate_>[TOut](f : Operator[T, TOut]) : ValueBindable[TOut] = {
@@ -34,7 +34,7 @@ package object fbl {
         }
     }
 
-    implicit class NumericListBindableExt[T](inner : CollectionBindable[T])(implicit num : Numeric[T]) {
+    implicit class NumericListBindableExt[T](inner : ListBindable[T])(implicit num : Numeric[T]) {
         def sum = {
             inner.aggregate_>(new Operator[T, T] {
                 override def zero = num.zero

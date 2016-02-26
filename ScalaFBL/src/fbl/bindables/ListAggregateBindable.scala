@@ -6,7 +6,7 @@ import scala.collection._
 
 
 
-private[fbl] class ListAggregateBindable[T, TOut](inner : CollectionBindable[T], var operator: Operator[T, TOut])
+private[fbl] class ListAggregateBindable[T, TOut](inner : ListBindable[T], var operator: Operator[T, TOut])
     extends ValueBindable[TOut] {
     private val _valueCache = mutable.ArrayBuffer[T]()
     private var _value : TOut = operator.zero

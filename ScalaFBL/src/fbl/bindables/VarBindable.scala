@@ -3,9 +3,6 @@ package fbl.bindables
 import fbl._
 import fbl.events.ContextualChangeInfo
 
-
-
-
 /**
   * Created by GregRos on 06/02/2016.
   */
