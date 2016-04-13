@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ScalaFBL.iml" filepath="$PROJECT_DIR$/ScalaFBL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Rexstream.iml" filepath="$PROJECT_DIR$/Rexstream.iml" />
     </modules>
   </component>
 </project>
