@@ -1,6 +1,6 @@
 package rexstream.rex
 
-import rexstream.{AnyRex, RexPointsList, RexVector, DependencyProvider}
+import rexstream.{AnyRex, RexVectorElements, RexVector, DependencyProvider}
 
 trait RexVectorBackedByPointsList[T] extends RexVector[T] {
     protected def itemsList = points.unbind

@@ -11,7 +11,6 @@ private[rexstream] class RexScalarLink[T](inner : RexScalar[T])
     inner.changed ++= changed
     override def canRead = inner.canRead
     override def canWrite = inner.canWrite
-    type MyDependency = Source
     override val depends= new Source(inner)
     val info = new StandardRexInfo(RexTypeNames.scalarLink, true)
     override def value: T = {

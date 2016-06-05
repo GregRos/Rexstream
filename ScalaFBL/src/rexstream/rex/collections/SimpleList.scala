@@ -9,7 +9,7 @@ import scala.collection._
   * Created by GregRos on 06/02/2016.
   */
 
-private[rexstream] class SimpleList[T](ctor : Unit => RexScalar[T]) extends RexPointsList[T] {
+private[rexstream] class SimpleList[T](ctor : Unit => RexScalar[T]) extends RexVectorElements[T] {
     protected val inner = new AutoClosingList[RexScalar[T]]
     val innerToken = inner.change ++= _change
     private val onBindableChanged = (SingleValueBindable : RexScalar[T]) => (changeInfo : ContextualChangeData) => {

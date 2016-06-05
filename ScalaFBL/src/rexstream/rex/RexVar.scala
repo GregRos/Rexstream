@@ -12,7 +12,6 @@ private[rexstream] class RexVar[T](initial: T, override val canWrite : Boolean =
     def this() = {
         this(defaultValue[T])
     }
-    type MyDependency = DependencyProvider
     override val depends = NoDependencies
     val info = new StandardRexInfo(RexTypeNames.scalarVar, false)
     private var _value = initial

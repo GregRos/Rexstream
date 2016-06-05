@@ -7,7 +7,7 @@ import rexstream._
 /**
   * Created by GregRos on 12/02/2016.
   */
-private[rexstream] class MapList[TIn, TOut](val source : RexPointsList[TIn], mapper : RexTransform[TIn, TOut]) extends RexPointsList[TOut] {
+private[rexstream] class MapList[TIn, TOut](val source : RexVectorElements[TIn], mapper : RexTransform[TIn, TOut]) extends RexVectorElements[TOut] {
     private val outer = new AutoClosingList[RexScalar[TOut]]()
     private val expectInnerChange = new ExpectEntry()
 

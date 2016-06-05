@@ -11,6 +11,5 @@ class RexSort[T](val parent : RexVector[T], orderingProvider : RexScalar[Orderin
 {
     val points = new SortList[T](parent.points, orderingProvider)
     val info = new StandardRexInfo(RexTypeNames.vectorSort, false)
-    type MyDependency = DependencyProvider
     override val depends= new SourceAndProvider(parent, orderingProvider)
 }

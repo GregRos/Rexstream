@@ -12,7 +12,7 @@ import scala.collection.mutable
   *
   * @tparam T The underlying value type of the bindables in this list.
   */
-trait RexPointsList[T] extends ItemChangedNotifier[RexScalar[T]] with Seq[RexScalar[T]] with AutoCloseable  {
+trait RexVectorElements[T] extends ItemChangedNotifier[RexScalar[T]] with Seq[RexScalar[T]] with AutoCloseable  {
 
     private var _isClosed = false
 

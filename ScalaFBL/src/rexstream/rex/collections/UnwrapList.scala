@@ -1,6 +1,6 @@
 package rexstream.rex.collections
 
-import rexstream.{RexScalar, RexPointsList, AnyRex}
+import rexstream.{RexScalar, RexVectorElements, AnyRex}
 import rexstream.collections._
 import rexstream.events._
 
@@ -9,7 +9,7 @@ import scala.collection.mutable._
   * Exposes the elements of a `BindablesList[T]`, translating operations on the elements to operations on the bindables.
   *
   */
-private[rexstream] class UnwrapList[T](source : RexPointsList[T]) extends Buffer[T] with ItemChangedNotifier[T] {
+private[rexstream] class UnwrapList[T](source : RexVectorElements[T]) extends Buffer[T] with ItemChangedNotifier[T] {
     private val onBindableListChanged = (param : ItemChanged[RexScalar[T]]) => {
         val myMessage : ItemChanged[T] =
             param match {

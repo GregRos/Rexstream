@@ -10,7 +10,6 @@ class RexMap[TIn, TOut](parent : RexVector[TIn], map : RexTransform[TIn, TOut])
     extends StandardRexImplementation with RexVectorBackedByPointsList[TOut]
 {
     override val points = new MapList[TIn, TOut](parent.points, map)
-    type MyDependency = Source
     val depends = new Source(parent)
     val info = new StandardRexInfo(RexTypeNames.vectorMap, false)
 }

@@ -11,7 +11,6 @@ class RexFilter[T](val parent : RexVector[T], map : RexTransform[T, Boolean])
 
     override val points = new FilterList[T](parent.points, map)
 
-    override type MyDependency = Source
     val depends = new Source(parent)
     val info = new StandardRexInfo(RexTypeNames.vectorFilter, false)
 }

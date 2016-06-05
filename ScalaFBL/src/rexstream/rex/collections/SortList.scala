@@ -10,7 +10,7 @@ import scala.collection.mutable.ArrayBuffer
   * Created by GregRos on 09/03/2016.
   */
 
-private[rexstream] class SortList[T](source: RexPointsList[T], orderingProvider : RexScalar[Ordering[T]]) extends RexPointsList[T] {
+private[rexstream] class SortList[T](source: RexVectorElements[T], orderingProvider : RexScalar[Ordering[T]]) extends RexVectorElements[T] {
     val indexList = new ArrayBuffer[Int]()
 
     val onInnerChanged = (change: ItemChanged[RexScalar[T]]) => {

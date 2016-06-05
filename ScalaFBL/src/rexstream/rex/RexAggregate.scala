@@ -67,7 +67,6 @@ private[rexstream] class RexAggregate[T, TOut](inner : RexVector[T], var operato
         operatorProvider.changed -= onOperatorChanged
         super.close()
     }
-    override type MyDependency = SourceAndProvider
     override val depends = new SourceAndProvider(inner, operatorProvider)
 
     /**

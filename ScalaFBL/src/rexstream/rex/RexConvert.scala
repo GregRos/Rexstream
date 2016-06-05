@@ -32,7 +32,6 @@ class RexConvert[TIn, TOut](
 
     override def canWrite = convertIn.isDefined && inner.canWrite
 
-    override final type MyDependency = SourceAndProvider
     override val depends = new SourceAndProvider(inner, conversionProvider)
 
     val info = new StandardRexInfo(RexTypeNames.scalarConvert, true)

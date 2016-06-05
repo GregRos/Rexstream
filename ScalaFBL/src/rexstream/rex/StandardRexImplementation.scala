@@ -1,14 +1,12 @@
 package rexstream.rex
 
 import rexstream.events._
-import rexstream.{AnyRex, CommonMetadata, StandardRexInfo}
+import rexstream.{AnyRex, CommonMetadataProvider, StandardRexInfo}
 /**
   * Created by GregRos on 04/06/2016.
   */
 trait StandardRexImplementation extends AnyRex {
-    override final type MyMetadata = CommonMetadata
-    override final type MyInfo = StandardRexInfo
-    override final val metadata = new CommonMetadata()
+    override final val metadata = new CommonMetadataProvider()
 
     private var _isClosed = false
     override final def isClosed = _isClosed
@@ -19,5 +17,4 @@ trait StandardRexImplementation extends AnyRex {
         changed.close()
         _isClosed = true
     }
-
 }

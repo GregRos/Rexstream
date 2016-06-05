@@ -5,14 +5,10 @@ import rexstream.events._
 import scala.collection._
 
 trait AnyRex extends AutoCloseable {
-    type MyMetadata <: MetadataProvider
     type MyChangeInfo <: ContextualChangeData
-    type MyDependency <: DependencyProvider
-    type MyInfo <: RexInfo
-
-    def depends : MyDependency
-    def metadata : MyMetadata
-    def info : MyInfo
+    def depends : DependencyProvider
+    def metadata : MetadataProvider
+    def info : RexInfo
 
     def isClosed : Boolean
     def changed : Event[MyChangeInfo]

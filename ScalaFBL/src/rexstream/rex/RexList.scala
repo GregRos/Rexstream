@@ -11,7 +11,6 @@ class RexList[T]()
 {
     val points = new SimpleList[T](x => new RexVar[T]())
     val info = new StandardRexInfo(RexTypeNames.vectorList, false)
-    type MyDependency = DependencyProvider
     override val depends = NoDependencies
 
 }

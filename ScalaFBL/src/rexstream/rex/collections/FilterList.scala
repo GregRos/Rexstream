@@ -7,7 +7,7 @@ import scala.collection._
 /**
   * Created by GregRos on 13/02/2016.
   */
-private[rexstream] class FilterList[T](source: RexPointsList[T], selector: RexTransform[T, Boolean]) extends RexPointsList[T] {
+private[rexstream] class FilterList[T](source: RexVectorElements[T], selector: RexTransform[T, Boolean]) extends RexVectorElements[T] {
     val filterResults = new MapList[T, Boolean](source, selector)
     val indexList = mutable.ArrayBuffer[Int]()
     private val onInnerResultsChanged: (ItemChanged[RexScalar[T]]) => Unit = (change) => {

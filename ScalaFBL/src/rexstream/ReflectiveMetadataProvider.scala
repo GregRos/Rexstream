@@ -5,7 +5,7 @@ import rexstream.util._
 /**
   * Created by GregRos on 04/06/2016.
   */
-class ReflectiveMetadataProvider extends MetadataProvider {
+abstract class ReflectiveMetadataProvider extends MetadataProvider {
     private var metadata = Map[String, Any]()
 
     private def getSetter(name : String) = {
