@@ -12,7 +12,7 @@ import scala.collection._
 private[rexstream] class SimpleList[T](ctor : Unit => RexScalar[T]) extends RexPointsList[T] {
     protected val inner = new AutoClosingList[RexScalar[T]]
     val innerToken = inner.change ++= _change
-    private val onBindableChanged = (SingleValueBindable : RexScalar[T]) => (changeInfo : ContextualChangeInfo) => {
+    private val onBindableChanged = (SingleValueBindable : RexScalar[T]) => (changeInfo : ContextualChangeData) => {
         val indexOf = inner.indexOf(SingleValueBindable)
         _change.raise(ItemMutated(indexOf, SingleValueBindable, changeInfo))
     }

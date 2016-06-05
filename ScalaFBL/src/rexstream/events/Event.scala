@@ -3,10 +3,13 @@ package rexstream.events
 import scala.collection.immutable.HashSet
 import scala.collection.mutable
 
+
+
+
 /**
   * Created by GregRos on 06/02/2016.
   */
-class Event[ TParam]() extends AbsEvent[TParam] {
+class Event[TParam]() extends AbsEvent[TParam] {
     private class Token(f: (TParam) => Unit) extends AutoCloseable {
         def close(): Unit = {
             unsubscribe(f)
@@ -21,7 +24,7 @@ class Event[ TParam]() extends AbsEvent[TParam] {
         suppress = false
     }
 
-    var callbacks = mutable.MutableList[(TParam) => Unit]()
+    val callbacks = mutable.MutableList[(TParam) => Unit]()
 
     override def subscribe(f: (TParam) => Unit): AutoCloseable = {
         callbacks += f

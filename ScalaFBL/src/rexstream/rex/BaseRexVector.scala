@@ -1,14 +1,9 @@
 package rexstream.rex
 
-import rexstream.{AnyRex, RexPointsList, RexVector, NaryDependency}
+import rexstream.{AnyRex, RexPointsList, RexVector, DependencyProvider}
 
-/**
-  * Created by GregRos on 26/02/2016.
-  */
-abstract class BaseRexVector[T](pointsList : RexPointsList[T], parent : AnyRex = null) extends RexVector[T] {
-    protected val itemsList = pointsList.unbind
-
-    protected[rexstream] override val points: RexPointsList[T] = pointsList
+trait RexVectorBackedByPointsList[T] extends RexVector[T] {
+    protected def itemsList = points.unbind
 
     override def update(n: Int, newelem: T): Unit = {
         makeSureNotClosed()
@@ -30,13 +25,13 @@ abstract class BaseRexVector[T](pointsList : RexPointsList[T], parent : AnyRex =
         itemsList.remove(n)
     }
 
-    override def +=:(elem: T): BaseRexVector.this.type = {
+    override def +=:(elem: T) = {
         makeSureNotClosed()
         itemsList.+=:(elem)
         this
     }
 
-    override def +=(elem: T): BaseRexVector.this.type = {
+    override def +=(elem: T) = {
         makeSureNotClosed()
         itemsList.+=(elem)
         this
@@ -57,26 +52,13 @@ abstract class BaseRexVector[T](pointsList : RexPointsList[T], parent : AnyRex =
         itemsList.iterator
     }
 
-    override def close(): Unit = {
-        pointsList.close()
+    abstract override def close(): Unit = {
+        points.close()
         super.close()
     }
 
-    override val dependency: NaryDependency = if (parent == null) NaryDependency.empty else NaryDependency.source(parent)
 
-    /**
-      * Validates this bindable's integrity. This is a debugging feature.
-      *
-      * @return
-      */
     override def consistencyCheck(): Unit = {
-        pointsList.validate()
-        if (parent != null) {
-            parent.consistencyCheck()
-        }
+        points.validate()
     }
-
-    override def canWrite: Boolean = true
-
-    override def canRead: Boolean = true
 }

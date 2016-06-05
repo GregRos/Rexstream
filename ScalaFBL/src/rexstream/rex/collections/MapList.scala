@@ -11,7 +11,7 @@ private[rexstream] class MapList[TIn, TOut](val source : RexPointsList[TIn], map
     private val outer = new AutoClosingList[RexScalar[TOut]]()
     private val expectInnerChange = new ExpectEntry()
 
-    private val onOuterItemMutated = (sender : RexScalar[TOut]) => (changeInfo : ContextualChangeInfo) => {
+    private val onOuterItemMutated = (sender : RexScalar[TOut]) => (changeInfo : ContextualChangeData) => {
         val indexOf = outer.indexOf(sender)
         _change.raise(ItemMutated(indexOf, sender, changeInfo))
     }

@@ -7,8 +7,11 @@ import rexstream.rex.collections.{SimpleList, FilterList}
   * Created by GregRos on 26/02/2016.
   */
 class RexList[T]()
-    extends BaseRexVector[T](new SimpleList[T](x => new RexVar[T]()), null)
+    extends StandardRexImplementation with RexVectorBackedByPointsList[T]
 {
-    override val dependency = NaryDependency.empty
+    val points = new SimpleList[T](x => new RexVar[T]())
+    val info = new StandardRexInfo(RexTypeNames.vectorList, false)
+    type MyDependency = DependencyProvider
+    override val depends = NoDependencies
 
 }

@@ -10,7 +10,7 @@ trait ItemChangedNotifier[T] {
 }
 
 
-abstract class ItemChanged[T] extends ContextualChangeInfo {
+abstract class ItemChanged[T] extends ContextualChangeData {
     def applyOn(target : mutable.Buffer[T], items : Unit => Seq[T]) = {
         this match {
             case ItemAdded(index, newValue) => target.insert(index, newValue)
@@ -29,7 +29,7 @@ case class ItemRemoved[T](index : Int) extends ItemChanged[T]
 
 case class ItemUpdated[T](index : Int, newValue : T) extends ItemChanged[T]
 
-case class ItemMutated[T](index : Int, value: T, changeInfo: ContextualChangeInfo) extends ItemChanged[T]
+case class ItemMutated[T](index : Int, value: T, changeInfo: ContextualChangeData) extends ItemChanged[T]
 
 case class Reset[T]() extends ItemChanged[T]
 

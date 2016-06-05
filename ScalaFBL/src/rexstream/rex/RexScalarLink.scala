@@ -1,16 +1,19 @@
 package rexstream.rex
 
 import rexstream._
-import rexstream.events.ContextualChangeInfo
+import rexstream.events.ContextualChangeData
 
 /**
   * Created by GregRos on 13/02/2016.
   */
-private[rexstream] class RexScalarLink[T](inner : RexScalar[T]) extends RexScalar[T] {
+private[rexstream] class RexScalarLink[T](inner : RexScalar[T])
+    extends StandardRexImplementation with RexScalar[T] {
     inner.changed ++= changed
     override def canRead = inner.canRead
     override def canWrite = inner.canWrite
-    override val dependency = NaryDependency.source(inner)
+    type MyDependency = Source
+    override val depends= new Source(inner)
+    val info = new StandardRexInfo(RexTypeNames.scalarLink, true)
     override def value: T = {
         makeSureNotClosed()
         inner.value

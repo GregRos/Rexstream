@@ -8,11 +8,12 @@ import scala.collection._
 import scala.collection.mutable.ArrayBuffer
 
 private[rexstream] class RexAggregate[T, TOut](inner : RexVector[T], var operatorProvider: RexScalar[Operator[T, TOut]])
-    extends RexScalar[TOut] {
+    extends RexScalar[TOut] with StandardRexImplementation {
     private val _valueCache = mutable.ArrayBuffer[T]()
     private var _value : TOut = _
     override def canWrite = false
     override def canRead = true
+    override val info = new StandardRexInfo(RexTypeNames.vectorAggregate, false)
     private val onInnerChanged = (changeInfo : ItemChanged[RexScalar[T]]) => {
         val operator = operatorProvider.value
         val info = if (!operator.isOrderInvariant) Reset() else changeInfo
@@ -41,7 +42,7 @@ private[rexstream] class RexAggregate[T, TOut](inner : RexVector[T], var operato
                 }
         }
         if (operator.equal(oldValue, _value)) {
-            changed.raise(LastValueInfo(oldValue))
+            changed.raise(LastValueData(oldValue))
         }
     } : Unit
 
@@ -66,10 +67,8 @@ private[rexstream] class RexAggregate[T, TOut](inner : RexVector[T], var operato
         operatorProvider.changed -= onOperatorChanged
         super.close()
     }
-
-    override val dependency: NaryDependency = {
-        NaryDependency.sourceAndProvider(inner, operatorProvider)
-    }
+    override type MyDependency = SourceAndProvider
+    override val depends = new SourceAndProvider(inner, operatorProvider)
 
     /**
       * Validates this bindable's integrity. This is a debugging feature.

@@ -7,7 +7,10 @@ import rexstream.rex.collections._
   * Created by GregRos on 09/04/2016.
   */
 class RexSort[T](val parent : RexVector[T], orderingProvider : RexScalar[Ordering[T]])
-    extends BaseRexVector[T](new SortList[T](parent.points, orderingProvider), parent)
+    extends StandardRexImplementation with RexVectorBackedByPointsList[T]
 {
-    override val dependency = NaryDependency.sourceAndProvider(parent, orderingProvider)
+    val points = new SortList[T](parent.points, orderingProvider)
+    val info = new StandardRexInfo(RexTypeNames.vectorSort, false)
+    type MyDependency = DependencyProvider
+    override val depends= new SourceAndProvider(parent, orderingProvider)
 }

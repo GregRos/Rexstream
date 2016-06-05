@@ -12,7 +12,7 @@ import rexstream.operations.Conversion
 
 class RexConvert[TIn, TOut](
     inner: RexScalar[TIn],
-    conversionProvider : RexScalar[Conversion[TIn, TOut]]) extends RexScalar[TOut] {
+    conversionProvider : RexScalar[Conversion[TIn, TOut]]) extends RexScalar[TOut] with StandardRexImplementation {
 
     def convertOut = conversionProvider.value.out
     def convertIn = conversionProvider.value.in
@@ -32,8 +32,10 @@ class RexConvert[TIn, TOut](
 
     override def canWrite = convertIn.isDefined && inner.canWrite
 
-    override val dependency = NaryDependency.sourceAndProvider(inner, conversionProvider)
+    override final type MyDependency = SourceAndProvider
+    override val depends = new SourceAndProvider(inner, conversionProvider)
 
+    val info = new StandardRexInfo(RexTypeNames.scalarConvert, true)
     override def close() = {
         innerToken.close()
         providerToken.close()

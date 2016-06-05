@@ -1,6 +1,6 @@
 package rexstream.rex
 
-import rexstream.RexVector
+import rexstream.{RexVector, Source}
 
 /**
   * Created by GregRos on 09/04/2016.

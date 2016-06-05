@@ -2,12 +2,21 @@ package Main
 
 import rexstream._
 import rexstream.debug._
+import scala.reflect.runtime.universe._
+import rexstream.util._
+class Example {
+    def prop = 0
+    def prop_=(x : Int) = {}
+    val x = 5
+    var y = 7
+}
 /**
   * Created by GregRos on 06/02/2016.
   */
 object Main {
 
     def main(arr: Array[String]): Unit = {
+
         val list = ListVar[Int]
         val mapped = list.map_>(_.convert_>(n => n.asInstanceOf[Long], (n : Long) => n.asInstanceOf[Int]))
         list += 0 += 1 += 2
