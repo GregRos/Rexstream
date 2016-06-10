@@ -12,5 +12,5 @@ trait RexVector[T] extends mutable.Buffer[T] with AnyRex {
         s">{${this.map(_.toString).truncate(100, "...").mkString(", ")}}>"
     }
 
-    protected[rexstream] val points : RexVectorElements[T]
+    protected[rexstream] val elements : RexVectorElements[T]
 }

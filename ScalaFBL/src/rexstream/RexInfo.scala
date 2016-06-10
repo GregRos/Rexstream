@@ -6,4 +6,5 @@ package rexstream
 trait RexInfo {
     val rexType : String
     val isLazy : Boolean
+    val isFunctional : Boolean
 }

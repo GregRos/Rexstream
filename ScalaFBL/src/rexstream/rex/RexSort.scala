@@ -7,9 +7,13 @@ import rexstream.rex.collections._
   * Created by GregRos on 09/04/2016.
   */
 class RexSort[T](val parent : RexVector[T], orderingProvider : RexScalar[Ordering[T]])
-    extends StandardRexImplementation with RexVectorBackedByPointsList[T]
+    extends DefaultRex with DefaultRexVector[T]
 {
-    val points = new SortList[T](parent.points, orderingProvider)
-    val info = new StandardRexInfo(RexTypeNames.vectorSort, false)
-    override val depends= new SourceAndProvider(parent, orderingProvider)
+    val elements = new SortList[T](parent.elements, orderingProvider)
+    override val info = new RexInfo {
+        val isLazy = false
+        val isFunctional = true
+        val rexType = RexTypeNames.vectorSort
+    }
+    override val depends= DependencyProvider.sourceAndProvider(parent, orderingProvider)
 }

@@ -7,11 +7,15 @@ import rexstream.rex.collections._
   * Created by GregRos on 26/02/2016.
   */
 class RexFilter[T](val parent : RexVector[T], map : RexTransform[T, Boolean])
-    extends StandardRexImplementation with RexVectorBackedByPointsList[T] {
+    extends DefaultRex with DefaultRexVector[T] {
 
-    override val points = new FilterList[T](parent.points, map)
+    override val elements = new FilterList[T](parent.elements, map)
 
-    val depends = new Source(parent)
-    val info = new StandardRexInfo(RexTypeNames.vectorFilter, false)
+    val depends = DependencyProvider.source(parent)
+    override val info = new RexInfo {
+        val isLazy = false
+        val isFunctional = true
+        val rexType = RexTypeNames.vectorFilter
+    }
 }
 

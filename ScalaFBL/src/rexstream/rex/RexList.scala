@@ -7,10 +7,14 @@ import rexstream.rex.collections.{SimpleList, FilterList}
   * Created by GregRos on 26/02/2016.
   */
 class RexList[T]()
-    extends StandardRexImplementation with RexVectorBackedByPointsList[T]
+    extends DefaultRex with DefaultRexVector[T]
 {
-    val points = new SimpleList[T](x => new RexVar[T]())
-    val info = new StandardRexInfo(RexTypeNames.vectorList, false)
-    override val depends = NoDependencies
+    val elements = new SimpleList[T](x => new RexVar[T]())
+    override val info = new RexInfo {
+        val isLazy = false
+        val isFunctional = true
+        val rexType = RexTypeNames.vectorList
+    }
+    override val depends = DependencyProvider.none
 
 }

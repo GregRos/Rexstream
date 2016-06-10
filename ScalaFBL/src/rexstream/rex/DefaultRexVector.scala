@@ -1,9 +1,12 @@
 package rexstream.rex
 
-import rexstream.{AnyRex, RexVectorElements, RexVector, DependencyProvider}
+import rexstream.RexVector
 
-trait RexVectorBackedByPointsList[T] extends RexVector[T] {
-    protected def itemsList = points.unbind
+/**
+  * Created by lifeg on 08/06/2016.
+  */
+trait DefaultRexVector[T] extends RexVector[T] {
+    protected def itemsList = elements.unbind
 
     override def update(n: Int, newelem: T): Unit = {
         makeSureNotClosed()
@@ -53,12 +56,12 @@ trait RexVectorBackedByPointsList[T] extends RexVector[T] {
     }
 
     abstract override def close(): Unit = {
-        points.close()
+        elements.close()
         super.close()
     }
 
 
     override def consistencyCheck(): Unit = {
-        points.validate()
+        elements.validate()
     }
 }
