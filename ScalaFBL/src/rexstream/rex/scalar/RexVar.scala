@@ -1,7 +1,7 @@
-package rexstream.rex
+package rexstream.rex.scalar
 
-import rexstream.{_}
-import rexstream.events.ContextualChangeData
+import rexstream._
+import rexstream.rex._
 
 /**
   * Created by GregRos on 06/02/2016.

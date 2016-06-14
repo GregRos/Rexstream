@@ -1,6 +1,6 @@
 package rexstream
 
-import rexstream.rex.collections._
+import rexstream.rex.vector.collections._
 import rexstream.events._
 
 import scala.collection.mutable

@@ -1,11 +1,11 @@
-package rexstream.rex
+package rexstream.rex.vector
+
 import rexstream._
-import rexstream.collections._
 import rexstream.events._
 import rexstream.operations.Operator
+import rexstream.rex.DefaultRex
 
 import scala.collection._
-import scala.collection.mutable.ArrayBuffer
 
 private[rexstream] class RexAggregate[T, TOut](inner : RexVector[T], var operatorProvider: RexScalar[Operator[T, TOut]])
     extends RexScalar[TOut] with DefaultRex {

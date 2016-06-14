@@ -1,4 +1,4 @@
-package rexstream.rex.collections
+package rexstream.rex.vector.collections
 
 import rexstream.{RexScalar, RexVectorElements, AnyRex}
 import rexstream.collections._

@@ -1,7 +1,9 @@
-package rexstream.rex
+package rexstream.rex.vector
 
 import rexstream._
-import rexstream.rex.collections.{SimpleList, FilterList}
+import rexstream.rex.scalar.RexVar
+import rexstream.rex.vector.collections.SimpleList
+import rexstream.rex.DefaultRex
 
 /**
   * Created by GregRos on 26/02/2016.

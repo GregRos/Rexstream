@@ -67,13 +67,34 @@ object util {
         }
     }
 
-    implicit class TypeExt(t : Type) {
+    implicit class MethodExt(m : MethodSymbol) {
+        def invoke(target : Any, args : Any*): Any = {
+            val mirror = runtimeMirror(getClass.getClassLoader)
+            mirror.reflect(target).reflectMethod(m).apply(args : _*)
+        }
+    }
 
-        def tryGetMethodsByName(name : String): List[MethodSymbol]= {
-            t.decl(TermName(name)).alternatives.ofType[MethodSymbol].toList
+    implicit class TypeExt(t : Class[_]) {
+
+        def toType = {
+            val mirror = runtimeMirror(getClass.getClassLoader)
+            val typ = mirror.classSymbol(t).toType
+            typ
         }
 
+        def tryGetMethodsByName(name : String): List[MethodSymbol]= {
+            toType.decl(TermName(name)).alternatives.ofType[MethodSymbol].toList
+        }
 
+        def invokeGetter(target : Any, name : String): Option[Any] = {
+            val getter = tryGetMethodsByName(name).find(m => m.paramLists.isEmpty)
+            getter.map(m => m.invoke(target))
+        }
+
+        def invokeSetter(target : Any, name : String, arg : Any) : Boolean = {
+            val setter = tryGetMethodsByName(name + "_=").find {case List(List(x)) => true}
+            setter.map(m => m.invoke(target, arg)).isDefined
+        }
 
         def getGetterSetter(name : String) : GetterSetter = {
             val mirror = runtimeMirror(getClass.getClassLoader)

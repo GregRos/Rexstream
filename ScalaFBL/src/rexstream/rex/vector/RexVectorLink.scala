@@ -1,4 +1,4 @@
-package rexstream.rex
+package rexstream.rex.vector
 
 import rexstream.RexVector
 

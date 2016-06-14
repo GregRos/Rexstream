@@ -1,4 +1,4 @@
-package rexstream.rex
+package rexstream.util
 
 /**
   * Created by GregRos on 13/02/2016.

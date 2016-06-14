@@ -1,4 +1,6 @@
 import rexstream.operations.{Conversion, Operator}
+import rexstream.rex.scalar.{RexConvert, RexScalarLink, RexVar}
+import rexstream.rex.vector._
 
 package object rexstream {
     type RexTransform[TIn, TOut] = RexScalar[TIn] => RexScalar[TOut]

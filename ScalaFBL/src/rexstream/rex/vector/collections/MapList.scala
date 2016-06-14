@@ -1,9 +1,10 @@
-package rexstream.rex.collections
+package rexstream.rex.vector.collections
 
 import rexstream.rex._
 import rexstream.events._
 import rexstream.collections._
 import rexstream._
+import rexstream.util.ExpectEntry
 /**
   * Created by GregRos on 12/02/2016.
   */

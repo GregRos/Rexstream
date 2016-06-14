@@ -1,7 +1,8 @@
-package rexstream.rex
+package rexstream.rex.vector
 
-import rexstream.rex.collections.MapList
 import rexstream._
+import rexstream.rex.vector.collections.MapList
+import rexstream.rex.DefaultRex
 
 /**
   * Created by GregRos on 26/02/2016.

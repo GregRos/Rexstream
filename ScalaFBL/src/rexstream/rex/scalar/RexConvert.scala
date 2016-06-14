@@ -1,12 +1,11 @@
 /**
   * Created by GregRos on 06/02/2016.
   */
-package rexstream.rex
-
+package rexstream.rex.scalar
 
 import rexstream._
-import rexstream.events._
 import rexstream.operations.Conversion
+import rexstream.rex.DefaultRex
 
 
 
