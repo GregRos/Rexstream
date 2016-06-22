@@ -5,12 +5,14 @@ package rexstream
   */
 
 object RexTypeNames {
+
+
     val scalarPrefix = "Scalar"
     val scalarConvert = s"$scalarPrefix-Convert"
     val scalarVar = s"$scalarPrefix-Var"
     val scalarConst = s"$scalarPrefix-Const"
     val scalarLink = s"$scalarPrefix-Link"
-
+    val scalarMember = s"$scalarPrefix-Member"
     val vectorPrefix = "Vector"
     val vectorLink = s"$vectorPrefix-Link"
     val vectorMap = s"$vectorPrefix-Map"

@@ -23,9 +23,6 @@ package object rexstream {
             new RexScalarLink[T](inner) : RexScalar[T]
         }
 
-        private[rexstream] def boundary_> : RexScalar[T]= {
-            new RexBoundaryScalarLink[T](inner)
-        }
     }
 
     implicit class RexVectorExtensions[T](inner : RexVector[T]) {

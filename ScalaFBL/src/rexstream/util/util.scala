@@ -1,14 +1,12 @@
 package rexstream
-import java.lang.reflect.{Executable, Member, Method}
 
-import Main.Main._
+import java.lang.reflect.{Executable, Method}
 
 import scala.collection.generic._
 import scala.collection.mutable
-import scala.reflect.ClassTag
 import scala.reflect.runtime.universe._
-import scala.reflect._
-object util {
+import scala.reflect.{ClassTag, _}
+package object util {
     implicit class IterableExt[T](inner : Iterable[T]) {
         def choose[That, TOut](selector : T => Option[TOut])(implicit buider : CanBuildFrom[T, TOut, That]) = {
             inner.map(selector).filter(x => x.isDefined).map(x => x.get)

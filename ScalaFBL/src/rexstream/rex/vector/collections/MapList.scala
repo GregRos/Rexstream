@@ -4,7 +4,7 @@ import rexstream.rex._
 import rexstream.events._
 import rexstream.collections._
 import rexstream._
-import rexstream.util.ExpectEntry
+import rexstream.util._
 /**
   * Created by GregRos on 12/02/2016.
   */
@@ -18,7 +18,7 @@ private[rexstream] class MapList[TIn, TOut](val source : RexVectorElements[TIn],
     }
 
     private def convert(b : RexScalar[TIn]) = {
-        mapper(b.boundary_>)
+        mapper(b)
     }
 
     private val onInnerChanged = (changeInfo : ItemChanged[RexScalar[TIn]]) => {
