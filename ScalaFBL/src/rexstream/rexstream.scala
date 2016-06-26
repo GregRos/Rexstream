@@ -1,5 +1,5 @@
 import rexstream.operations.{Conversion, Operator}
-import rexstream.rex.scalar.{RexConvert, RexScalarLink, RexVar}
+import rexstream.rex.scalar.{RexConvert, RexMember, RexScalarLink, RexVar}
 import rexstream.rex.vector._
 
 package object rexstream {
@@ -22,6 +22,8 @@ package object rexstream {
         def link_> = {
             new RexScalarLink[T](inner) : RexScalar[T]
         }
+
+        def member_>[TOut](memberName : RexScalar[String]) = new RexMember[T, TOut](inner, memberName)
 
     }
 

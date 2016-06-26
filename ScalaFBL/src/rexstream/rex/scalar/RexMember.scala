@@ -8,22 +8,27 @@ import scala.reflect.ClassTag
 /**
   * Created by lifeg on 13/06/2016.
   */
-class RexMember[T : ClassTag](source : RexScalar[T], memberName : RexScalar[String]) extends RexScalar[T] with DefaultRex {
-    private val _getterSetter = implicitly[ClassTag[T]].runtimeClass.asInstanceOf[Class[T]].getGetterSetter(memberName.value)
+class RexMember[T, TOut](source : RexScalar[T], memberName : RexScalar[String]) extends RexScalar[TOut] with DefaultRex {
 
-    override def value: T = _getterSetter.getter match {
-        case None => throw Errors.Cannot_read
-        case Some(getter) => getter(source.value).asInstanceOf[T]
+    def currentClass = source.value.getClass
+
+    val innerToken = source.changed.subscribe(_ => {
+        this.changed.raise(null)
+    })
+
+    val memberToken = source.changed.subscribe(_ => {
+        this.changed.raise(null)
+    })
+
+    override def value: TOut = {
+        currentClass.invokeGetter(source.value, memberName.value).asInstanceOf[TOut]
     }
 
-    override def canWrite: Boolean = _getterSetter.setter.isDefined
+    override def canWrite: Boolean = currentClass.hasSetter(source.value, memberName.value)
 
-    override def value_=(x: T): Unit = _getterSetter.setter match {
-        case None => throw Errors.Cannot_write
-        case Some(setter) => setter(source.value, x)
-    }
+    override def value_=(x: TOut): Unit = currentClass.invokeSetter(source.value, memberName.value, x)
 
-    override def canRead: Boolean = _getterSetter.getter.isDefined
+    override def canRead: Boolean = currentClass.hasGetter(source.value, memberName.value)
 
     override def depends: DependencyProvider = DependencyProvider.source(source)
 
@@ -35,6 +40,7 @@ class RexMember[T : ClassTag](source : RexScalar[T], memberName : RexScalar[Stri
 
     override protected[rexstream] def consistencyCheck(): Unit = {
         //TODO: Improve this.
+        memberName.consistencyCheck()
         source.consistencyCheck()
     }
 }

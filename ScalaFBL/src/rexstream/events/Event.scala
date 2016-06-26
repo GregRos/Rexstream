@@ -3,9 +3,6 @@ package rexstream.events
 import scala.collection.immutable.HashSet
 import scala.collection.mutable
 
-
-
-
 /**
   * Created by GregRos on 06/02/2016.
   */

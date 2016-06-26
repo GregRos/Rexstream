@@ -16,6 +16,7 @@ class Example {
 object Main {
 
     def main(arr: Array[String]): Unit = {
+        val str = q"1.toString()";
 
         val list = ListVar[Int]
         val mapped = list.map_>(_.convert_>(n => n.asInstanceOf[Long], (n : Long) => n.asInstanceOf[Int]))

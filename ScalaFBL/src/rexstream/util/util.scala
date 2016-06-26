@@ -89,6 +89,14 @@ package object util {
             getter.map(m => m.invoke(target))
         }
 
+        def hasGetter(target : Any, name : String): Boolean = {
+            tryGetMethodsByName(name).exists(m => m.paramLists.isEmpty)
+        }
+
+        def hasSetter(target : Any, name : String) : Boolean = {
+            tryGetMethodsByName(s"${name}_=").exists {case List(List(x)) => true}
+        }
+
         def invokeSetter(target : Any, name : String, arg : Any) : Boolean = {
             val setter = tryGetMethodsByName(name + "_=").find {case List(List(x)) => true}
             setter.map(m => m.invoke(target, arg)).isDefined
