@@ -1,14 +1,14 @@
 package rexstream.rex.scalar
 
 import rexstream.{DependencyProvider, Errors, RexInfo, RexScalar, RexTypeNames}
-import rexstream.rex.DefaultRex
+import rexstream.rex._
 import rexstream.util._
 
 import scala.reflect.ClassTag
 /**
   * Created by lifeg on 13/06/2016.
   */
-class RexMember[T, TOut](source : RexScalar[T], memberName : RexScalar[String]) extends RexScalar[TOut] with DefaultRex {
+class RexMember[T, TOut](source : RexScalar[T], memberName : RexScalar[String]) extends RexScalar[TOut] with DefaultRexWithScalarChange {
 
     def currentClass = source.value.getClass
 
@@ -21,7 +21,7 @@ class RexMember[T, TOut](source : RexScalar[T], memberName : RexScalar[String]) 
     })
 
     override def value: TOut = {
-        currentClass.invokeGetter(source.value, memberName.value).asInstanceOf[TOut]
+        currentClass.invokeGetter(source.value, memberName.value).get.asInstanceOf[TOut]
     }
 
     override def canWrite: Boolean = currentClass.hasSetter(source.value, memberName.value)

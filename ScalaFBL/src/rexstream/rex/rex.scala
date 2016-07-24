@@ -1,4 +1,7 @@
 package rexstream
+
+import rexstream.events.{ItemChanged, ScalarChangeData}
+
 package object rex {
 
     private case class DefaultBox[T]() {
@@ -8,4 +11,7 @@ package object rex {
     private[rexstream] def defaultValue[T] = {
         DefaultBox[T]().default
     }
+
+    private[rexstream] type DefaultRexWithScalarChange = DefaultRex[ScalarChangeData]
+    private[rexstream] type DefaultRexWithVectorChange[T] = DefaultRex[ItemChanged[T]]
 }

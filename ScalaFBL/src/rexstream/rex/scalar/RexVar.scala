@@ -7,7 +7,7 @@ import rexstream.rex._
   * Created by GregRos on 06/02/2016.
   */
 private[rexstream] class RexVar[T](initial: T, override val canWrite : Boolean = true, override val canRead : Boolean = true)
-    extends RexScalar[T] with DefaultRex {
+    extends RexScalar[T] with DefaultRexWithScalarChange {
 
     def this() = {
         this(defaultValue[T])

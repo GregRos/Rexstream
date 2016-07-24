@@ -8,7 +8,7 @@ import rexstream.rex.DefaultRex
   * Created by GregRos on 26/02/2016.
   */
 class RexFilter[T](val parent : RexVector[T], map : RexTransform[T, Boolean])
-    extends DefaultRex with DefaultRexVector[T] {
+    extends DefaultRexVector[T] {
 
     override val elements = new FilterList[T](parent.elements, map)
 

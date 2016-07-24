@@ -9,7 +9,7 @@ import rexstream.rex.DefaultRex
   * Created by GregRos on 26/02/2016.
   */
 class RexList[T]()
-    extends DefaultRex with DefaultRexVector[T]
+    extends DefaultRexVector[T]
 {
     val elements = new SimpleList[T](x => new RexVar[T]())
     override val info = new RexInfo {

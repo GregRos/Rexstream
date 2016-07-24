@@ -7,7 +7,7 @@ import rexstream.rex.DefaultRex
   * Created by GregRos on 09/04/2016.
   */
 class RexSort[T](val parent : RexVector[T], orderingProvider : RexScalar[Ordering[T]])
-    extends DefaultRex with DefaultRexVector[T]
+    extends DefaultRexVector[T]
 {
     val elements = new SortList[T](parent.elements, orderingProvider)
     override val info = new RexInfo {

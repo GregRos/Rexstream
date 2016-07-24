@@ -3,12 +3,12 @@ package rexstream.rex.vector
 import rexstream._
 import rexstream.events._
 import rexstream.operations.Operator
-import rexstream.rex.DefaultRex
+import rexstream.rex.{DefaultRex, DefaultRexWithScalarChange}
 
 import scala.collection._
 
 private[rexstream] class RexAggregate[T, TOut](inner : RexVector[T], var operatorProvider: RexScalar[Operator[T, TOut]])
-    extends RexScalar[TOut] with DefaultRex {
+    extends RexScalar[TOut] with DefaultRexWithScalarChange {
     private val _valueCache = mutable.ArrayBuffer[T]()
     private var _value : TOut = _
     override def canWrite = false

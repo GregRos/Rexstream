@@ -7,6 +7,7 @@ package rexstream
 object RexTypeNames {
 
 
+
     val scalarPrefix = "Scalar"
     val scalarConvert = s"$scalarPrefix-Convert"
     val scalarVar = s"$scalarPrefix-Var"
@@ -20,4 +21,7 @@ object RexTypeNames {
     val vectorAggregate = s"$vectorPrefix-Aggregate"
     val vectorList = s"$vectorPrefix-List"
     val vectorFilter = s"$vectorPrefix-Filter"
+    val scalarChangeSilencer = s"$scalarPrefix-ChangeSilencer"
+
+    val scalarChangeNotifier = s"$scalarPrefix-ChangeNotifier"
 }

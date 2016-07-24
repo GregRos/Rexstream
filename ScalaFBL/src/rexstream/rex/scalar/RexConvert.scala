@@ -5,13 +5,13 @@ package rexstream.rex.scalar
 
 import rexstream._
 import rexstream.operations.Conversion
-import rexstream.rex.DefaultRex
+import rexstream.rex.{DefaultRex, DefaultRexWithScalarChange}
 
 
 
 class RexConvert[TIn, TOut](
     inner: RexScalar[TIn],
-    conversionProvider : RexScalar[Conversion[TIn, TOut]]) extends RexScalar[TOut] with DefaultRex {
+    conversionProvider : RexScalar[Conversion[TIn, TOut]]) extends RexScalar[TOut] with DefaultRexWithScalarChange {
 
     def convertOut = conversionProvider.value.out
     def convertIn = conversionProvider.value.in

@@ -16,8 +16,12 @@ class Example {
 object Main {
 
     def main(arr: Array[String]): Unit = {
-        val str = q"1.toString()";
+        val str = "Hi"
 
+        val s = str.var_>.member_>("length")
+
+
+        println(s)
         val list = ListVar[Int]
         val mapped = list.map_>(_.convert_>(n => n.asInstanceOf[Long], (n : Long) => n.asInstanceOf[Int]))
         list += 0 += 1 += 2
@@ -43,7 +47,7 @@ object Main {
         filtered(0) = 11
         filtered += 10 += 11 += 12
         filtered.remove(0)
-        val sorted = mapped.sort_> map_>(_.link_>)
+        val sorted = mapped.sort_>
         sorted.consistencyCheck()
         println(list)
         println(mapped)

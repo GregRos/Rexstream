@@ -4,14 +4,15 @@ import rexstream.rex._
 import rexstream.events._
 import scala.collection._
 
-trait AnyRex extends AutoCloseable {
-    type MyChangeInfo <: ContextualChangeData
+trait AnyRex[TChange] extends AutoCloseable {
     def depends : DependencyProvider
     def metadata : MetadataProvider
     def info : RexInfo
 
     def isClosed : Boolean
-    def changed : Event[MyChangeInfo]
+    def changed : Event[TChange]
+    def closing: AbsEvent[Unit]
+    def addChangeDetector(detector : ChangeDetector[_ <: TChange]) : Unit
 
     protected final def makeSureNotClosed(): Unit = {
         if (isClosed) {

@@ -1,11 +1,12 @@
 package rexstream.rex.vector
 
 import rexstream.RexVector
+import rexstream.rex.DefaultRexWithVectorChange
 
 /**
   * Created by lifeg on 08/06/2016.
   */
-trait DefaultRexVector[T] extends RexVector[T] {
+trait DefaultRexVector[T] extends RexVector[T] with DefaultRexWithVectorChange[T] {
     protected def itemsList = elements.unbind
 
     override def update(n: Int, newelem: T): Unit = {
@@ -16,6 +17,11 @@ trait DefaultRexVector[T] extends RexVector[T] {
     override def clear(): Unit = {
         makeSureNotClosed()
         itemsList.clear()
+    }
+
+    override def reset(input : Traversable[T]): Unit = {
+        clear()
+        insertAll(0, input)
     }
 
     override def length: Int = {

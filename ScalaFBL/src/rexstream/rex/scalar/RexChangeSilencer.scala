@@ -1,21 +1,27 @@
 package rexstream.rex.scalar
 
 import rexstream._
+import rexstream.events.ScalarChangeData
 import rexstream.rex._
 
 /**
   * Created by GregRos on 13/02/2016.
   */
-private[rexstream] class RexScalarLink[T](inner : RexScalar[T])
+private[rexstream] class RexChangeSilencer[T](inner : RexScalar[T], filter : (RexScalar[T], ScalarChangeData) => Boolean)
     extends DefaultRexWithScalarChange with RexScalar[T] {
-    inner.changed ++= changed
+    val _rexToken = inner.changed += (data => {
+        if (filter(inner, data)) {
+            this.changed.raise(data);
+        }
+    })
     override def canRead = inner.canRead
     override def canWrite = inner.canWrite
     override val depends= DependencyProvider.source(inner)
+
     override val info = new RexInfo {
         val isLazy = false
         val isFunctional = true
-        val rexType = RexTypeNames.scalarLink
+        val rexType = RexTypeNames.scalarChangeSilencer
     }
     override def value: T = {
         makeSureNotClosed()
@@ -27,7 +33,7 @@ private[rexstream] class RexScalarLink[T](inner : RexScalar[T])
     }
 
     override def close(): Unit = {
-        inner.changed --= changed
+        _rexToken.close()
         super.close()
     }
 

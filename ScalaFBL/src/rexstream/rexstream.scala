@@ -1,9 +1,13 @@
+import rexstream.events.{AbsEvent, ChangeDetector, ScalarChangeData}
 import rexstream.operations.{Conversion, Operator}
-import rexstream.rex.scalar.{RexConvert, RexMember, RexScalarLink, RexVar}
+import rexstream.rex.scalar._
 import rexstream.rex.vector._
+import rexstream.util._
 
 package object rexstream {
     type RexTransform[TIn, TOut] = RexScalar[TIn] => RexScalar[TOut]
+
+    implicit def toScalarConst[T](value : T) : RexScalar[T] = value.const_>
 
     import rexstream.rex._
     implicit class RexScalarExtensions[T](inner : RexScalar[T]) {
@@ -25,6 +29,9 @@ package object rexstream {
 
         def member_>[TOut](memberName : RexScalar[String]) = new RexMember[T, TOut](inner, memberName)
 
+        def notify_>(changeDetector : T => AbsEvent[ScalarChangeData]) = new RexChangeNotifier[T](inner, changeDetector) : RexScalar[T]
+
+        def asBinding(priority :BindPriority.Value = BindPriority.Origin) = new StdScalarBinding[T](inner, priority) : ScalarBinding[T]
     }
 
     implicit class RexVectorExtensions[T](inner : RexVector[T]) {
@@ -55,6 +62,8 @@ package object rexstream {
         def sort_>(implicit ordering : Ordering[T]) : RexVector[T] ={
             inner.sort_>(ordering.const_>)
         }
+
+        def asBinding(priority :BindPriority.Value = BindPriority.Origin) = new StdVectorBinding[T](inner, priority) : VectorBinding[T]
     }
 
     implicit class RexCreatorExtensions[T](inner : T) {

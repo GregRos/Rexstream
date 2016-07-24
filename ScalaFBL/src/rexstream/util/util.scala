@@ -7,6 +7,12 @@ import scala.collection.mutable
 import scala.reflect.runtime.universe._
 import scala.reflect.{ClassTag, _}
 package object util {
+
+    implicit class AnyExt[T](inner : T) {
+        def equalsAny(others : T*): Boolean = {
+            others.exists(inner.equals)
+        }
+    }
     implicit class IterableExt[T](inner : Iterable[T]) {
         def choose[That, TOut](selector : T => Option[TOut])(implicit buider : CanBuildFrom[T, TOut, That]) = {
             inner.map(selector).filter(x => x.isDefined).map(x => x.get)
@@ -85,7 +91,7 @@ package object util {
         }
 
         def invokeGetter(target : Any, name : String): Option[Any] = {
-            val getter = tryGetMethodsByName(name).find(m => m.paramLists.isEmpty)
+            val getter = tryGetMethodsByName(name).find(m => m.paramLists.length <= 1)
             getter.map(m => m.invoke(target))
         }
 
