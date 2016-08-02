@@ -12,7 +12,6 @@ trait AnyRex[TChange] extends AutoCloseable {
     def isClosed : Boolean
     def changed : Event[TChange]
     def closing: AbsEvent[Unit]
-    def addChangeDetector(detector : ChangeDetector[_ <: TChange]) : Unit
 
     protected final def makeSureNotClosed(): Unit = {
         if (isClosed) {

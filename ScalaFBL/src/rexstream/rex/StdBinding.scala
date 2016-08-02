@@ -16,6 +16,9 @@ private[rexstream] abstract class StdBinding[TChange >: Null <: ContextualChange
     private var _targetClosingToken : AutoCloseable = null
     private var _target : TRex = null
     private var _state = BindState.Ready
+    private val _isUpdating = new java.lang.ThreadLocal[Boolean] {
+        override def initialValue(): Boolean = false
+    }
     def target = _target
     def state = _state
 
@@ -48,7 +51,11 @@ private[rexstream] abstract class StdBinding[TChange >: Null <: ContextualChange
     protected def rectify(fromOrigin : Boolean, change : TChange): Unit
 
     private def onChange(data : TChange, notifier : TRex): Unit = {
-        if (state != BindState.Active) {
+        if (_isUpdating.get) {
+            return
+        }
+        _isUpdating.set(true)
+         if (state != BindState.Active) {
             return
         }
         if (origin.isClosed) {
@@ -61,6 +68,7 @@ private[rexstream] abstract class StdBinding[TChange >: Null <: ContextualChange
         }
         val fromOrigin = isOrigin(notifier)
         rectify(fromOrigin, data)
+        _isUpdating.set(false)
     }
 
     def close(): Unit = {

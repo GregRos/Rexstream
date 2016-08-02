@@ -9,10 +9,6 @@ import scala.collection._
   */
 trait DefaultRex[TChange] extends AnyRex[TChange] {
     private lazy val _changeTokens = mutable.MutableList[AutoCloseable]()
-    override final def addChangeDetector(detector : ChangeDetector[_ <: TChange]): Unit = {
-        val s = detector.changed ++= changed
-        _changeTokens += s
-    }
 
     override final val metadata = MetadataProvider()
     private var _isClosed = false

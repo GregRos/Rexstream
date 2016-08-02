@@ -13,8 +13,8 @@ private[rexstream] class RexScalarLink[T](inner : RexScalar[T])
     override def canWrite = inner.canWrite
     override val depends= DependencyProvider.source(inner)
     override val info = new RexInfo {
-        val isLazy = false
-        val isFunctional = true
+        val isLazy = true
+        val isFunctional = false
         val rexType = RexTypeNames.scalarLink
     }
     override def value: T = {

@@ -1,4 +1,4 @@
-import rexstream.events.{AbsEvent, ChangeDetector, ScalarChangeData}
+import rexstream.events.{AbsEvent, ScalarChangeData}
 import rexstream.operations.{Conversion, Operator}
 import rexstream.rex.scalar._
 import rexstream.rex.vector._

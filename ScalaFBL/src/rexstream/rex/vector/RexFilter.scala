@@ -18,5 +18,13 @@ class RexFilter[T](val parent : RexVector[T], map : RexTransform[T, Boolean])
         val isFunctional = true
         val rexType = RexTypeNames.vectorFilter
     }
+
+    override def consistencyCheck(): Unit = {
+        val recalculated = parent.map(_.const_>).filter(x => map(x).value).map(x => x.value)
+        if (!recalculated.equals(this.toSeq)) {
+            throw Errors.Inconsistency_found("Manually filtered sequence doesn't match cached sequence.")
+        }
+        parent.consistencyCheck()
+    }
 }
 

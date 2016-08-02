@@ -18,6 +18,8 @@ private[rexstream] class RexChangeSilencer[T](inner : RexScalar[T], filter : (Re
     override def canWrite = inner.canWrite
     override val depends= DependencyProvider.source(inner)
 
+
+
     override val info = new RexInfo {
         val isLazy = false
         val isFunctional = true

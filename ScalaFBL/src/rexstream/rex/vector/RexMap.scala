@@ -17,4 +17,9 @@ class RexMap[TIn, TOut](parent : RexVector[TIn], map : RexTransform[TIn, TOut])
         val isFunctional = true
         val rexType = RexTypeNames.vectorMap
     }
+
+    override def consistencyCheck(): Unit = {
+        elements.validate()
+        parent.consistencyCheck()
+    }
 }

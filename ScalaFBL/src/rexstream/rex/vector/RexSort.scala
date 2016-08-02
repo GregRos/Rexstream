@@ -16,4 +16,13 @@ class RexSort[T](val parent : RexVector[T], orderingProvider : RexScalar[Orderin
         val rexType = RexTypeNames.vectorSort
     }
     override val depends= DependencyProvider.sourceAndProvider(parent, orderingProvider)
+
+    override def consistencyCheck(): Unit = {
+        val ordering = orderingProvider.value
+        val sorted = parent.sorted(ordering)
+        if (!sorted.equals(this.toSeq)) {
+            throw Errors.Inconsistency_found("Manually sorted sequence doesn't match cached sequence.")
+        }
+        parent.consistencyCheck()
+    }
 }

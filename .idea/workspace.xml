@@ -2,40 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c1c7ce1-48f1-4bad-9348-f05dde09f15c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/StdScalarBinding.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/StdVectorBinding.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/scala_sdk_2_11_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/scala_sdk_2_11_7.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ScalaFBL/src/Main/Main.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/events/ChangeDetectionStrategy.scala" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/ScalaFBL.iml" afterPath="$PROJECT_DIR$/ScalaFBL/ScalaFBL.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/Main/Main.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/Main/Main.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/AnyRex.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/AnyRex.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/Binding.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/Binding.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/Dependency.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/Dependency.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/DependencyProvider.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/DependencyProvider.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/ObjectClosedException.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/ObjectClosedException.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/RexScalar.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/RexScalar.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/RexTypeNames.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/RexTypeNames.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/RexVector.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/RexVector.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/debug.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/debug.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/events/ContextualChangeData.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/events/ContextualChangeData.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/DefaultRex.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/DefaultRex.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/rex.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/rex.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexConvert.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexConvert.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/StdBinding.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/StdBinding.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexChangeNotifier.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexChangeNotifier.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexChangeSilencer.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexChangeSilencer.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexMember.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexMember.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexScalarLink.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexScalarLink.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexVar.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexVar.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/DefaultRexVector.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/DefaultRexVector.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexAggregate.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexAggregate.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexFilter.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexFilter.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexList.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexList.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexMap.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexMap.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexSort.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexSort.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexVectorLink.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexVectorLink.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rexstream.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/rexstream.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScalaFBL/src/rexstream/util/util.scala" afterPath="$PROJECT_DIR$/ScalaFBL/src/rexstream/util/util.scala" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/ScalaFBL/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,109 +41,119 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Binding.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/Binding.scala">
+      <file leaf-file-name="RexFilter.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexFilter.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+            <state relative-caret-position="483">
+              <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
               <folding>
-                <element signature="e#19#96#0" expanded="true" />
+                <element signature="e#30#48#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StdScalarBinding.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/StdScalarBinding.scala">
+      <file leaf-file-name="RexAggregate.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexAggregate.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            <state relative-caret-position="345">
+              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
               <folding>
-                <element signature="e#23#48#0" expanded="true" />
+                <element signature="e#30#48#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RexInfo.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/RexInfo.scala">
+      <file leaf-file-name="RexList.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexList.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+            <state relative-caret-position="207">
+              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+              <folding>
+                <element signature="e#30#48#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RexMap.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexMap.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+              <folding>
+                <element signature="e#30#48#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RexSort.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexSort.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+              <folding>
+                <element signature="e#30#48#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RexMember.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexMember.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="667">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding>
+                <element signature="e#30#109#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScalaFBL/src/Main/Main.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="759">
+              <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+              <folding>
+                <element signature="e#14#32#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ScalaFBL/src/tests/Main.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dependency.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/Dependency.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContextualChangeData.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/events/ContextualChangeData.scala">
+      <file leaf-file-name="RexScalarLink.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexScalarLink.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="322">
-              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChangeDetectionStrategy.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/events/ChangeDetectionStrategy.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemChanged.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/events/ItemChanged.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rexstream.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rexstream.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="910">
-              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
               <folding>
-                <element signature="e#0#68#0" expanded="true" />
+                <element signature="e#30#48#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StdBinding.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/StdBinding.scala">
+      <file leaf-file-name="RexVar.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexVar.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1357">
-              <caret line="60" column="9" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RexScalar.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/RexScalar.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="736">
+              <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
               <folding>
-                <element signature="e#19#44#0" expanded="true" />
+                <element signature="e#30#48#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -169,6 +168,7 @@
         <option value="Package Object" />
         <option value="Scala Trait" />
         <option value="Scala Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -183,8 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/ReflectingDependencyProvider.scala" />
-        <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/RexPointsList.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/RexVectorElements.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/CommonMetadataProvider.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/Metadata.scala" />
@@ -192,48 +190,50 @@
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/StandardRexImplementation.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/BaseRexVector.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/DefaultRexVector.scala" />
-        <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexVectorLink.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/util/ExpectEntry.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/util.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/collections/MapList.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/events/Event.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/operations/ChangeDetectionStrategy.scala" />
-        <option value="$PROJECT_DIR$/ScalaFBL/src/Main/Main.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/debug.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/Dependency.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/DependencyProvider.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexConvert.scala" />
-        <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexMember.scala" />
-        <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexScalarLink.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexVar.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexAggregate.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexList.scala" />
-        <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexMap.scala" />
-        <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexSort.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/rex.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/events/ChangeDetectionStrategy.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexChangeSignal.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexChangeSuppressor.scala" />
-        <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexChangeNotifier.scala" />
-        <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexChangeSilencer.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/RexTypeNames.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/ScalarBinding.scala" />
-        <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexFilter.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/util/util.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/ObjectClosedException.scala" />
-        <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/DefaultRexVector.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/RexVector.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/RexScalar.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/ScalarBinding.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/VectorBinding.scala" />
-        <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/AnyRex.scala" />
-        <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/DefaultRex.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/events/ContextualChangeData.scala" />
-        <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/StdBinding.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/StdScalarBinding.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/StdVectorBinding.scala" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/Binding.scala" />
+        <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/StdBinding.scala" />
+        <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/AnyRex.scala" />
+        <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/DefaultRex.scala" />
+        <option value="$PROJECT_DIR$/ScalaFBL/pom.xml" />
+        <option value="$PROJECT_DIR$/ScalaFBL/src/Main/java/Main.java" />
         <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rexstream.scala" />
+        <option value="$PROJECT_DIR$/ScalaFBL/src/Main/Main.scala" />
+        <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexFilter.scala" />
+        <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexSort.scala" />
+        <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/DefaultRexVector.scala" />
+        <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexMap.scala" />
+        <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexChangeNotifier.scala" />
+        <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexChangeSilencer.scala" />
+        <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexMember.scala" />
+        <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexVectorLink.scala" />
+        <option value="$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexScalarLink.scala" />
       </list>
     </option>
   </component>
@@ -241,14 +241,20 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="Bundled (Maven 3)" />
+        <option name="usePluginRegistry" value="true" />
       </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-705" />
-    <option name="y" value="395" />
-    <option name="width" value="1857" />
-    <option name="height" value="764" />
+    <option name="x" value="63" />
+    <option name="y" value="2" />
+    <option name="width" value="1855" />
+    <option name="height" value="1078" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -399,11 +405,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -436,6 +437,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SBL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaFBL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="rexstream" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -458,30 +477,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ObjectClosedException.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SBL" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ScalaFBL" />
+              <option name="myItemId" value="util" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rexstream" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Binding.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -524,33 +521,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="events" />
+              <option name="myItemId" value="rex" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ItemChanged.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SBL" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ScalaFBL" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rexstream" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="events" />
+              <option name="myItemId" value="vector" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -572,59 +547,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="events" />
+              <option name="myItemId" value="rex" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ContextualChangeData.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SBL" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ScalaFBL" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rexstream" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="events" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChangeDetectionStrategy.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SBL" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ScalaFBL" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rexstream" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="collections" />
+              <option name="myItemId" value="scalar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -639,22 +566,23 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$USER_HOME$/.ivy2/cache/org.scala-lang/scala-compiler/docs/scala-compiler-2.11.7-javadoc.jar!/" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -721,10 +649,7 @@
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
-      <method>
-        <option name="Make" enabled="true" />
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
@@ -747,10 +672,7 @@
       <Profilers>
         <option name="GAPID_DISABLE_PCS" value="false" />
       </Profilers>
-      <method>
-        <option name="Make" enabled="true" />
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
@@ -1043,22 +965,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-705" y="395" width="1857" height="764" extended-state="0" />
-    <editor active="true" />
+    <frame x="63" y="2" width="1855" height="1078" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32780084" sideWeight="0.4980695" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21910696" sideWeight="0.5228864" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32780084" sideWeight="0.5019305" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18835978" sideWeight="0.5173745" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43581617" sideWeight="0.48509935" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.4980695" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1846473" sideWeight="0.48262548" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32780084" sideWeight="0.4980695" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19922093" sideWeight="0.49376947" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1994429" sideWeight="0.49376947" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Code-Amnesia" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.4958632" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Daily Tasks" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1070,6 +991,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20596355" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21910696" sideWeight="0.5118588" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="155" y="92" width="1673" height="896" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23676012" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1141,27 +1063,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/RexTypeInfo.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/util/ExpectEntry.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/collections/MapList.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/operations/Conversion.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -1190,13 +1091,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/Main/Main.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1081">
-          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/DependencyProvider.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -1211,20 +1105,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/collections/AutoClosingList.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexSort.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/events/AbsEvent.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -1233,41 +1113,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexChangeSuppressor.scala" />
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexScalarLink.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexVar.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexConvert.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexMember.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexChangeSilencer.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/ScalarBinding.scala" />
     <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/rex.scala">
       <provider selected="true" editor-type-id="text-editor">
@@ -1276,19 +1121,235 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexAggregate.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/collections/FilterList.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/util/util.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.7-sources.jar!/scala/Enumeration.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="180" column="0" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/collections/SimpleList.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/collections/UnwrapList.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/ObjectClosedException.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/RexVectorElements.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="989">
+          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/RexTypeNames.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/RexVector.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/collections/SortList.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/RexInfo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/events/ContextualChangeData.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/events/ItemChanged.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/Dependency.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/StdBinding.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/events/ChangeDetectionStrategy.scala" />
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/collections/AutoClosingList.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/StdVectorBinding.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="13" column="65" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/StdScalarBinding.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-103">
+          <caret line="14" column="88" selection-start-line="14" selection-start-column="88" selection-end-line="14" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/Binding.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/RexScalar.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/DefaultRex.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rexstream.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1242">
+          <caret line="0" column="33" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/Main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/AnyRex.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/DefaultRexVector.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="70" column="27" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexChangeNotifier.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexChangeSilencer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexConvert.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1357">
+          <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexVectorLink.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexSort.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <element signature="e#30#48#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexMap.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+          <folding>
+            <element signature="e#30#48#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1302,238 +1363,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexMap.scala">
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexFilter.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        <state relative-caret-position="483">
+          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
           <folding>
             <element signature="e#30#48#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexVectorLink.scala">
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexAggregate.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/util/util.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        <state relative-caret-position="345">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
           <folding>
-            <element signature="e#19#64#0" expanded="true" />
+            <element signature="e#30#48#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/RexFilter.scala">
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexVar.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.7-sources.jar!/scala/Enumeration.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="180" column="0" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/collections/SimpleList.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="736">
+          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
           <folding>
-            <element signature="e#42#60#0" expanded="false" />
+            <element signature="e#30#48#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/collections/UnwrapList.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/ObjectClosedException.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/RexVectorElements.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="989">
-          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/RexTypeNames.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/DefaultRexVector.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/RexVector.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
-          <folding>
-            <element signature="e#18#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexChangeNotifier.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding>
-            <element signature="e#30#81#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/AnyRex.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/DefaultRex.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/vector/collections/SortList.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/StdVectorBinding.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-          <folding>
-            <element signature="e#23#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/StdBinding.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1357">
-          <caret line="60" column="9" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/StdScalarBinding.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="e#23#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/RexScalar.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#19#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/RexInfo.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/Binding.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-          <folding>
-            <element signature="e#19#96#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/events/ContextualChangeData.scala">
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexScalarLink.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/events/ChangeDetectionStrategy.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/events/ItemChanged.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rexstream.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="910">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
           <folding>
-            <element signature="e#0#68#0" expanded="true" />
+            <element signature="e#30#48#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/Dependency.scala">
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/rexstream/rex/scalar/RexMember.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="667">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#30#109#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/Main/Main.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+          <folding>
+            <element signature="e#14#32#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScalaFBL/src/tests/Main.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>

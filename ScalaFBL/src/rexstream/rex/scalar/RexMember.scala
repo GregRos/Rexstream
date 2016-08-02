@@ -30,7 +30,7 @@ class RexMember[T, TOut](source : RexScalar[T], memberName : RexScalar[String]) 
 
     override def canRead: Boolean = currentClass.hasGetter(source.value, memberName.value)
 
-    override def depends: DependencyProvider = DependencyProvider.source(source)
+    override def depends: DependencyProvider = DependencyProvider.sourceAndProvider(source, memberName)
 
     override def info: RexInfo = new RexInfo {
         val isFunctional = true
