@@ -10,6 +10,7 @@ package object rexstream {
     implicit def toScalarConst[T](value : T) : RexScalar[T] = value.const_>
 
     import rexstream.rex._
+
     implicit class RexScalarExtensions[T](inner : RexScalar[T]) {
 
         def convert_>[TOut](conversion : RexScalar[Conversion[T, TOut]]) ={
@@ -67,8 +68,12 @@ package object rexstream {
     }
 
     implicit class RexCreatorExtensions[T](inner : T) {
-        def var_> = Var(inner)
-        def const_> = Const(inner)
+        def var_> = Var_>(inner)
+        def const_> = Const_>(inner)
+    }
+
+    implicit class RexListCreatorExtensions[T](inner : Iterable[T]) {
+        def list_> = ListVar_>[T] ++= inner
     }
 
     implicit class NumericRexExtensions[T](inner : RexVector[T])(implicit num : Numeric[T]) {
@@ -83,9 +88,9 @@ package object rexstream {
         }
     }
 
-    def Var[T](v : T) = new RexVar[T](v) : RexScalar[T]
+    def Var_>[T](v : T) = new RexVar[T](v) : RexScalar[T]
 
-    def Const[T](v : T) = new RexVar[T](v, canWrite = false) : RexScalar[T]
+    def Const_>[T](v : T) = new RexVar[T](v, canWrite = false) : RexScalar[T]
 
-    def ListVar[T] = new RexList[T]()
+    def ListVar_>[T] = new RexList[T]()
 }
