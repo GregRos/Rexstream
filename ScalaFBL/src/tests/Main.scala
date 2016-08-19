@@ -12,18 +12,85 @@ object Main {
     }
 }
 
-trait CannedRexBehaviors  { this : FlatSpec=>
-    def anyScalarWriteableRex(rex : Int => RexScalar[Int]) = {
+trait VectorTests {this : FlatSpec =>
+    def transformInvariance(rex : => RexVector[Int]): Unit = {
+        val r = rex
+        val last = (Math.random() * 1000000).toInt
 
-        it should "be initialized correctly" in {
-            var r = rex(0)
-            assert(r.canRead, "Can read")
-            assert(r.canWrite, "Can write")
-            assert(!r.isClosed)
+    }
+}
+
+trait ScalarTests  { this : FlatSpec=>
+
+    def unique = (Math.random() * 100000).toInt
+
+    def isWriteable(rex : => RexScalar[Int]) =
+        it should "be writeable" in {
+            assert(rex.canWrite)
+        }
+
+    def isReadable(rex : => RexScalar[Int]) =
+        it should "be readable" in {
+            assert(rex.canRead)
+        }
+
+    def isOpen(rex : => RexScalar[Int]) =
+        it should "be open" in {
+            assert(!rex.isClosed)
+        }
+
+    def changes(rex : => RexScalar[Int]) =
+        it should "change" in {
+            val r = rex
+            var wasChanged = false
+            val d = r.changed += (x => wasChanged = true)
+            r.value = unique
+            assert(wasChanged)
+            d.close()
+        }
+
+    def closes(rex : => RexScalar[Int]) =
+        it should "close" in {
+            val r = rex
+            var wasClosed = false
+            var d = r.closing += (x => wasClosed = true)
+            r.close()
+            assert(wasClosed)
+            assertThrows[ObjectClosedException](r.value, "")
+            d.close()
+        }
+
+    def 
+
+
+    def anyScalarWriteableRex(rex : => RexScalar[Int]) = {
+
+        it should "be readable" in {
+            assert(rex.canRead)
+        }
+
+        it should "be writeable" in {
+            assert(rex.canWrite)
+        }
+
+        it should "be open" in {
+            assert(!rex.isClosed)
+        }
+
+        it should "change" in {
+            val r = rex
+            var wasChanged = false
+            val d = r.changed += (x => wasChanged = true)
+            r.value = unique
+            assert(wasChanged)
+        }
+
+        it should "close" in {
+
         }
 
         it should "be writeable and readable" in {
-            val r = rex(0)
+            val r = rex
             assert(r.canRead)
             assert(r.canWrite)
             assert(!r.isClosed)
@@ -33,7 +100,7 @@ trait CannedRexBehaviors  { this : FlatSpec=>
         }
 
         it should "change" in {
-            val r = rex(0)
+            val r = rex
             var wasChanged = false
             val d = r.changed += (x => wasChanged = false)
             r.value = 1
@@ -44,7 +111,7 @@ trait CannedRexBehaviors  { this : FlatSpec=>
         }
 
         it should "close" in {
-            val r = rex(1)
+            val r = rex
             assert(!r.isClosed)
             var wasClosed = false
             val d = r.closing += (x => wasClosed = true)
